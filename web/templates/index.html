@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG 智能搜索</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/github.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/highlight.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+        }
+        
+        /* 左侧边栏 */
+        .sidebar {
+            width: 240px;
+            background: #f8f9fa;
+            border-right: 1px solid #e9ecef;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* 优化 logo 样式 */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .logo:hover {
+            background: #e9ecef;
+        }
+        
+        .logo img {
+            width: 32px;
+            height: 32px;
+        }
+        
+        .logo span {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        .nav-item {
+            padding: 0.5rem;
+            margin: 0.25rem 0;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6c757d;
+            text-decoration: none;
+        }
+        
+        .nav-item:hover {
+            background: #e9ecef;
+        }
+        
+        .nav-item.active {
+            background: #e3f2fd;
+            color: #007bff;
+        }
+        
+        /* 主内容区 */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem;
+            background: white;
+            max-width: 100%;
+        }
+        
+        .search-container {
+            max-width: 800px;
+            width: 85%;
+            text-align: center;
+            margin-top: 6vh;
+        }
+        
+        .search-header {
+            margin-bottom: 2rem;
+        }
+        
+        .search-header img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+        }
+        
+        .search-header h1 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .search-header p {
+            color: #6c757d;
+        }
+        
+        .search-box {
+            position: relative;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 1.2rem;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+        }
+        
+        .model-selector {
+            padding: 0.5rem 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .model-select {
+            width: 100%;
+            padding: 0.6rem;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            background: white;
+            font-size: 0.9rem;
+            color: #495057;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23495057' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.6rem center;
+            transition: all 0.2s;
+        }
+        
+        .model-select:hover {
+            border-color: #007bff;
+        }
+        
+        .models-loading {
+            padding: 0.6rem;
+            text-align: center;
+            color: #6c757d;
+            background: #f8f9fa;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        
+        /* 添加模型分组样式 */
+        .model-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .model-group-title {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-bottom: 3px;
+        }
+        
+        /* 对话区域 */
+        .chat-container {
+            max-width: 900px;
+            width: 85%;
+            margin: 1.5rem auto;
+            display: none;
+        }
+        
+        .message {
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 0.3s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .message-content {
+            padding: 1.25rem;
+            border-radius: 10px;
+            background: #f8f9fa;
+            color: #2c3e50;
+            width: 100%;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        
+        .message-content pre {
+            background: #f1f3f5;
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        
+        .message-content code {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f1f3f5;
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        
+        .message-content pre code {
+            padding: 0;
+            background: none;
+        }
+        
+        .message-content blockquote {
+            border-left: 4px solid #e9ecef;
+            margin: 0;
+            padding-left: 1rem;
+            color: #6c757d;
+        }
+        
+        .message-content table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1rem 0;
+        }
+        
+        .message-content th,
+        .message-content td {
+            border: 1px solid #e9ecef;
+            padding: 0.5rem;
+        }
+        
+        .message-content th {
+            background: #f8f9fa;
+        }
+        
+        .message-user .message-content {
+            background: #e3f2fd;
+            color: #007bff;
+        }
+        
+        .sources-list {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+        
+        .sources-title {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 8px;
+            padding-left: 4px;
+        }
+        
+        .sources-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 4px;
+            scrollbar-width: thin;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        /* 美化滚动条 */
+        .sources-container::-webkit-scrollbar {
+            height: 6px;
+        }
+        
+        .sources-container::-webkit-scrollbar-track {
+            background: #f1f3f5;
+            border-radius: 3px;
+        }
+        
+        .sources-container::-webkit-scrollbar-thumb {
+            background: #dee2e6;
+            border-radius: 3px;
+        }
+        
+        .source-item {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            min-width: 200px;
+            max-width: 300px;
+            transition: all 0.2s ease;
+        }
+        
+        .source-item:hover {
+            border-color: #4299e1;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .source-number {
+            color: #6c757d;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        
+        .source-content {
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        .source-title {
+            color: #0066cc;
+            text-decoration: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        .source-score {
+            color: #6c757d;
+            font-size: 0.85em;
+        }
+        
+        .loading {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 0.6rem 1.2rem;
+            color: #2d3748;
+            font-size: 0.9rem;
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        
+        .loading-indicator {
+            position: relative;
+            width: 12px;
+            height: 12px;
+            margin-right: 12px;
+        }
+        
+        .loading-indicator::before,
+        .loading-indicator::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #4299e1;
+            animation: ripple 1.4s ease-in-out infinite;
+        }
+        
+        .loading-indicator::after {
+            animation-delay: 0.7s;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(2.5);
+                opacity: 0;
+            }
+        }
+        
+        #loading-text {
+            font-weight: 500;
+            background: linear-gradient(90deg, #2d3748, #4a5568);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.3px;
+        }
+        
+        .model-dropdown {
+            position: absolute;
+            top: 1rem;
+            left: 260px;
+            z-index: 100;
+        }
+        
+        .model-select {
+            padding: 0.5rem 2rem 0.5rem 1rem;
+            font-size: 0.9rem;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            background-color: white;
+            color: #2c3e50;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 12px;
+        }
+        
+        .model-select:hover {
+            border-color: #007bff;
+        }
+        
+        .model-select:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+        }
+        
+        .history-list {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+        
+        .history-item {
+            padding: 0.6rem 0.8rem;
+            margin: 0.25rem 0;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #495057;
+            transition: all 0.2s ease;
+        }
+        
+        .history-item:hover {
+            background: #e9ecef;
+        }
+        
+        .history-item i {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .empty-history {
+            text-align: center;
+            color: #6c757d;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .history-search {
+            margin: 0.5rem 0 1rem 0;
+            position: relative;
+        }
+        
+        .history-search input {
+            width: 100%;
+            padding: 0.6rem 0.8rem;
+            padding-left: 2.2rem;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            background: white;
+            transition: all 0.2s ease;
+        }
+        
+        .history-search input:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+        }
+        
+        .history-search i {
+            position: absolute;
+            left: 0.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .no-results {
+            text-align: center;
+            color: #6c757d;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .chunks-list {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .chunk-item {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: #f8f9fa;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .chunk-item .chunk-title {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+        
+        .chunk-item .chunk-score {
+            color: #6c757d;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+        
+        .chunk-item .chunk-content {
+            color: #495057;
+            margin-top: 0.25rem;
+        }
+        
+        .answer-content {
+            background: #fff;
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-top: 1rem;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        
+        .chunks-list {
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 1rem;
+        }
+        
+        .chunk-item {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: #fff;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .chunk-item .chunk-title {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+        
+        .chunk-item .chunk-score {
+            color: #6c757d;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+        
+        .chunk-item .chunk-content {
+            color: #495057;
+            margin-top: 0.25rem;
+        }
+        
+        .sources-list {
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .source-item {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: #fff;
+            border-radius: 4px;
+        }
+        
+        .source-link {
+            color: #007bff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .source-link:hover {
+            text-decoration: underline;
+        }
+        
+        .source-score {
+            color: #6c757d;
+            font-size: 0.85rem;
+            margin-left: 0.5rem;
+        }
+        
+        .new-chat-btn {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.5rem 1rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            z-index: 1000;
+        }
+        
+        .new-chat-btn:hover {
+            background: #0056b3;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        
+        .new-chat-btn i {
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .new-chat-btn {
+                padding: 0.4rem;
+            }
+            .new-chat-btn span {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .chat-container {
+                width: 90%;
+            }
+            
+            .message-content {
+                padding: 1rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 1rem;
+            }
+            
+            .chat-container {
+                width: 95%;
+                margin: 1rem 0;
+            }
+            
+            .search-container {
+                width: 95%;
+                margin-top: 4vh;
+            }
+            
+            .message-content {
+                padding: 1rem;
+            }
+        }
+        
+        /* 添加清空按钮样式 */
+        .clear-history-btn {
+            margin-top: auto;
+            padding: 0.75rem;
+            border: none;
+            background: none;
+            color: #dc3545;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            width: 100%;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+        
+        .clear-history-btn:hover {
+            background-color: rgba(220, 53, 69, 0.1);
+        }
+        
+        .clear-history-btn i {
+            font-size: 1.1rem;
+        }
+        
+        .model-selector {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .model-option {
+            padding: 5px 15px;
+            border-radius: 15px;
+            background: #f1f3f5;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .model-option.active {
+            background: #4299e1;
+            color: white;
+        }
+        
+        .top-bar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+        
+        .model-selector {
+            min-width: 120px;
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+        
+        .model-select {
+            width: 100%;
+            padding: 0.6rem;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            background: white;
+            font-size: 0.9rem;
+            color: #495057;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23495057' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.6rem center;
+            transition: all 0.2s;
+        }
+        
+        .models-loading {
+            padding: 0.6rem;
+            text-align: center;
+            color: #6c757d;
+            background: #f8f9fa;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        
+        .new-chat-btn {
+            margin: 0;
+        }
+        
+        .sources-list {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+        
+        .sources-title {
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 8px;
+        }
+        
+        .source-item {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .source-number {
+            color: #6c757d;
+            min-width: 20px;
+        }
+        
+        .source-link {
+            color: #0066cc;
+            text-decoration: none;
+            flex: 1;
+        }
+        
+        .source-link:hover {
+            text-decoration: underline;
+        }
+        
+        .source-score {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- 左侧边栏 -->
+    <div class="sidebar">
+        <div class="logo" onclick="startNewChat()">
+            <i class="bi bi-search" style="font-size: 1.5rem; color: #007bff;"></i>
+            <span>RAG AI Search</span>
+        </div>
+
+        <div class="history-search">
+            <i class="bi bi-search"></i>
+            <input type="text" 
+                   id="history-search-input" 
+                   placeholder="Search history..."
+                   oninput="searchHistory(this.value)">
+        </div>
+        <div class="history-list" id="history-list">
+            <!-- 历史记录项会在这里动态添加 -->
+        </div>
+        <button class="clear-history-btn" onclick="clearHistory()">
+            <i class="bi bi-trash"></i>
+            清空历史记录
+        </button>
+    </div>
+
+    <!-- 主内容区 -->
+    <div class="main-content">
+        <div class="top-bar">
+            <div id="model-selector" class="model-selector">
+                <div class="models-loading">加载中...</div>
+            </div>
+            <button class="new-chat-btn" onclick="startNewChat()">
+                <i class="bi bi-plus-lg"></i>
+                <span>New Chat</span>
+            </button>
+        </div>
+        
+        <div class="search-container">
+            <div class="search-header">
+                <i class="bi bi-search" style="font-size: 2.5rem; color: #007bff;"></i>
+                <h1>RAG AI Search Engine</h1>
+                <p>Intelligent search powered by RAG technology</p>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" 
+                       class="search-input" 
+                       id="query" 
+                       placeholder="输入您的问题，按回车搜索..."
+                       onkeydown="handleKeyPress(event)">
+            </div>
+        </div>
+
+        <div class="chat-container" id="chat-messages">
+            <!-- 消息会动态添加到这里 -->
+        </div>
+        
+        <div id="loading" class="loading">
+            <div class="loading-indicator"></div>
+            <span id="loading-text">思考中</span>
+        </div>
+    </div>
+
+    <script>
+        const chatMessages = document.getElementById('chat-messages');
+        const searchContainer = document.querySelector('.search-container');
+        let chatHistory = [];
+        
+        // 配置 marked 选项
+        marked.setOptions({
+            highlight: function(code, lang) {
+                if (lang && hljs.getLanguage(lang)) {
+                    return hljs.highlight(code, { language: lang }).value;
+                }
+                return hljs.highlightAuto(code).value;
+            },
+            breaks: true,
+            gfm: true
+        });
+
+        function addMessage(content, isUser = false) {
+            chatMessages.style.display = 'block';
+            searchContainer.style.display = 'none';
+            
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'message-user' : ''}`;
+            
+            const messageContent = document.createElement('div');
+            messageContent.className = 'message-content';
+            
+            if (isUser) {
+                messageContent.innerText = content;
+                messageDiv.appendChild(messageContent);
+                chatMessages.appendChild(messageDiv);
+            } else {
+                // 返回消息容器，供后续更新使用
+                messageDiv.appendChild(messageContent);
+                chatMessages.appendChild(messageDiv);
+                
+                return {
+                    updateSources: (sources) => {
+                        if (sources && sources.length > 0) {
+                            const sourcesHtml = `
+                                <div class="sources-list">
+                                    <div class="sources-title">参考来源</div>
+                                    <div class="sources-container">
+                                        ${sources.map((source, index) => `
+                                            <div class="source-item">
+                                                <span class="source-number">${(index + 1).toString().padStart(2, '0')}</span>
+                                                <div class="source-content">
+                                                    <a href="${source.url}" target="_blank" class="source-title" 
+                                                       title="${source.title}">
+                                                        ${source.title}
+                                                    </a>
+                                                    ${source.score ? 
+                                                        `<div class="source-score">相关度: ${source.score.toFixed(2)}</div>` 
+                                                        : ''}
+                                                </div>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            `;
+                            const sourcesDiv = document.createElement('div');
+                            sourcesDiv.innerHTML = sourcesHtml;
+                            messageContent.appendChild(sourcesDiv);
+                        }
+                    },
+                    updateAnswer: (answer) => {
+                        const answerDiv = messageContent.querySelector('.answer-content') || 
+                            document.createElement('div');
+                        answerDiv.className = 'answer-content';
+                        answerDiv.innerHTML = marked.parse(answer);
+                        
+                        // 代码高亮
+                        answerDiv.querySelectorAll('pre code').forEach((block) => {
+                            hljs.highlightBlock(block);
+                        });
+                        
+                        if (!answerDiv.parentNode) {
+                            messageContent.appendChild(answerDiv);
+                        }
+                        
+                        chatMessages.scrollTop = chatMessages.scrollHeight;
+                    }
+                };
+            }
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                submitQuery();
+            }
+        }
+
+        // 修改历史记录相关变量和函数
+        const historyList = document.getElementById('history-list');
+
+        // 修改页面加载初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 重置界面状态
+            chatMessages.innerHTML = '';
+            searchContainer.style.display = 'block';
+            chatMessages.style.display = 'none';
+            
+            // 清空并聚焦搜索框
+            const searchInput = document.getElementById('query');
+            searchInput.value = '';
+            searchInput.focus();
+            
+            // 只加载历史记录列表，不显示任何对话
+            try {
+                const savedHistory = localStorage.getItem('chatHistory');
+                if (savedHistory) {
+                    chatHistory = JSON.parse(savedHistory);
+                    updateHistoryList();
+                }
+            } catch (e) {
+                console.error('Error loading history:', e);
+                chatHistory = [];
+            }
+        });
+
+        // 修改 updateHistoryList 函数
+        function updateHistoryList(searchText = '') {
+            const historyItems = document.getElementById('history-list');
+            const filteredHistory = searchText
+                ? chatHistory.filter(session => 
+                    session.query.toLowerCase().includes(searchText.toLowerCase()))
+                : chatHistory;
+            
+            if (filteredHistory.length === 0) {
+                historyItems.innerHTML = '<div class="empty-history">暂无历史记录</div>';
+                return;
+            }
+            
+            historyItems.innerHTML = filteredHistory.map(session => `
+                <div class="history-item" onclick="loadChatSession(${JSON.stringify(session).replace(/"/g, '&quot;')})">
+                    <i class="bi bi-chat-left-text"></i>
+                    <div class="history-item-content">
+                        <div class="history-item-query">${session.query}</div>
+                        <div class="history-item-time">${new Date(session.timestamp).toLocaleString()}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        // 修改保存聊天会话的函数
+        function saveChatSession(query, messageData) {
+            const session = {
+                id: Date.now(),
+                query: query,
+                answer: messageData,  // 直接保存完整的 messageData
+                timestamp: new Date().toISOString()
+            };
+            
+            chatHistory.unshift(session);
+            if (chatHistory.length > 50) {
+                chatHistory.pop();
+            }
+            
+            localStorage.setItem('chatHistory', JSON.stringify(chatHistory));
+            updateHistoryList();
+        }
+        
+        // 修改加载历史对话函数
+        function loadChatSession(session) {
+            if (!session) return;
+            
+            // 清空当前对话
+            chatMessages.innerHTML = '';
+            
+            // 显示用户问题
+            addMessage(session.query, true);
+            
+            // 创建消息容器并显示答案
+            const messageContainer = addMessage({});
+            
+            // 显示源文档和答案
+            if (session.answer && session.answer.sources) {
+                messageContainer.updateSources(session.answer.sources);
+            }
+            if (session.answer && session.answer.answer) {
+                messageContainer.updateAnswer(session.answer.answer);
+            }
+            
+            // 切换到聊天视图
+            chatMessages.style.display = 'block';
+            searchContainer.style.display = 'none';
+        }
+        
+        // 修改 logo 点击事件
+        document.querySelector('.logo').addEventListener('click', startNewChat);
+        
+        async function submitQuery() {
+            const query = document.getElementById('query').value.trim();
+            const loading = document.getElementById('loading');
+            const loadingText = document.getElementById('loading-text');
+            const selectedModel = document.querySelector('.model-option.active').dataset.model;
+            
+            if (!query) {
+                alert('请输入有效的问题！');
+                return;
+            }
+            
+            try {
+                addMessage(query, true);
+                loading.style.display = 'flex';
+                loadingText.textContent = '思考中';
+                
+                // 创建消息容器和更新函数
+                const messageContainer = addMessage({});
+                let messageData = {
+                    answer: '',
+                    sources: []
+                };
+                
+                const response = await fetch('/search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ 
+                        query: query,
+                        model: selectedModel
+                    })
+                });
+                
+                // 处理流式响应
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let hasStartedGenerating = false;
+                
+                while (true) {
+                    const {value, done} = await reader.read();
+                    if (done) break;
+                    
+                    const chunk = decoder.decode(value);
+                    const lines = chunk.split('\n');
+                    
+                    for (const line of lines) {
+                        if (line.startsWith('data: ')) {
+                            try {
+                                const data = JSON.parse(line.slice(5));
+                                if (data.sources) {
+                                    messageData.sources = data.sources;
+                                    messageContainer.updateSources(data.sources);
+                                }
+                                if (data.content) {
+                                    if (!hasStartedGenerating) {
+                                        loadingText.textContent = '生成中';
+                                        hasStartedGenerating = true;
+                                    }
+                                    messageData.answer += data.content;
+                                    messageContainer.updateAnswer(messageData.answer);
+                                }
+                            } catch (e) {
+                                console.error('Error parsing JSON:', e);
+                            }
+                        }
+                    }
+                }
+                
+                // 保存到历史记录
+                saveChatSession(query, messageData);
+                
+            } catch (error) {
+                addMessage(`系统错误: ${error.message}`);
+            } finally {
+                loading.style.display = 'none';
+            }
+        }
+        
+        // 添加搜索历史记录函数
+        function searchHistory(searchText) {
+            updateHistoryList(searchText);
+        }
+        
+        // 修改 startNewChat 函数
+        function startNewChat() {
+            chatMessages.innerHTML = '';
+            searchContainer.style.display = 'block';
+            chatMessages.style.display = 'none';
+            document.getElementById('query').value = '';
+            document.getElementById('query').focus();
+        }
+        
+        // 添加清空历史记录功能
+        function clearHistory() {
+            if (confirm('确定要清空所有历史记录吗？')) {
+                chatHistory = [];
+                localStorage.removeItem('chatHistory');
+                updateHistoryList();
+            }
+        }
+
+        // 添加加载历史记录的函数
+        function loadHistory() {
+            const historyList = document.getElementById('history-list');
+            const chatMessages = document.getElementById('chat-messages');
+            const searchContainer = document.querySelector('.search-container');
+            
+            // 从localStorage获取历史记录
+            const chatHistory = JSON.parse(localStorage.getItem('chatHistory') || '[]');
+            
+            if (chatHistory.length > 0) {
+                // 只更新历史列表，不显示最近的对话
+                historyList.innerHTML = chatHistory.map(session => `
+                    <div class="history-item" onclick="loadChatSession(${JSON.stringify(session).replace(/"/g, '&quot;')})">
+                        <i class="bi bi-chat-left-text"></i>
+                        <div class="history-item-content">
+                            <div class="history-item-query">${session.query}</div>
+                            <div class="history-item-time">${new Date(session.timestamp).toLocaleString()}</div>
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                // 如果没有历史记录，显示空状态
+                historyList.innerHTML = '<div class="empty-history">暂无历史记录</div>';
+            }
+            
+            // 始终显示搜索框，隐藏聊天消息
+            searchContainer.style.display = 'block';
+            chatMessages.style.display = 'none';
+        }
+
+        // 在页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function() {
+            loadHistory();
+        });
+
+        // 模型选择器点击事件
+        document.querySelectorAll('.model-option').forEach(option => {
+            option.addEventListener('click', function() {
+                // 移除其他选项的激活状态
+                document.querySelectorAll('.model-option').forEach(opt => {
+                    opt.classList.remove('active');
+                });
+                // 激活当前选项
+                this.classList.add('active');
+            });
+        });
+
+        // 修改加载模型列表的函数
+        async function loadModels() {
+            const modelSelector = document.getElementById('model-selector');
+            if (!modelSelector) return;
+            
+            try {
+                modelSelector.innerHTML = '<div class="models-loading">加载中...</div>';
+                
+                const response = await fetch('/models');
+                const data = await response.json();
+                
+                if (data.success && data.models && data.models.length > 0) {
+                    const models = data.models.sort((a, b) => a.display_name.localeCompare(b.display_name));
+                    
+                    const select = document.createElement('select');
+                    select.className = 'model-select';
+                    select.id = 'model-select';
+                    
+                    models.forEach((model, index) => {
+                        const option = document.createElement('option');
+                        option.value = model.name;
+                        option.textContent = model.display_name;
+                        if (index === 0) option.selected = true;
+                        select.appendChild(option);
+                    });
+                    
+                    modelSelector.innerHTML = '';
+                    modelSelector.appendChild(select);
+                } else {
+                    modelSelector.innerHTML = '<div class="models-loading">无可用模型</div>';
+                }
+            } catch (e) {
+                console.error('Error loading models:', e);
+                modelSelector.innerHTML = '<div class="models-loading">加载失败</div>';
+            }
+        }
+
+        // 页面加载时初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            loadModels();  // 加载可用模型
+            loadHistory(); // 加载历史记录
+        });
+
+        // 提交查询时获取当前选中的模型
+        async function submitQuery() {
+            const query = document.getElementById('query').value.trim();
+            const modelSelect = document.getElementById('model-select');
+            const selectedModel = modelSelect ? modelSelect.value : 'gpt';
+            
+            if (!query) {
+                alert('请输入有效的问题！');
+                return;
+            }
+            
+            try {
+                addMessage(query, true);
+                const loading = document.getElementById('loading');
+                const loadingText = document.getElementById('loading-text');
+                loading.style.display = 'flex';
+                loadingText.textContent = '思考中';
+                
+                // 创建消息容器和更新函数
+                const messageContainer = addMessage({});
+                let messageData = {
+                    answer: '',
+                    sources: []
+                };
+                
+                const response = await fetch('/search', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ 
+                        query: query,
+                        model: selectedModel
+                    })
+                });
+                
+                // 处理流式响应
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let hasStartedGenerating = false;
+                
+                while (true) {
+                    const {value, done} = await reader.read();
+                    if (done) break;
+                    
+                    const chunk = decoder.decode(value);
+                    const lines = chunk.split('\n');
+                    
+                    for (const line of lines) {
+                        if (line.startsWith('data: ')) {
+                            try {
+                                const data = JSON.parse(line.slice(5));
+                                if (data.sources) {
+                                    messageData.sources = data.sources;
+                                    messageContainer.updateSources(data.sources);
+                                }
+                                if (data.content) {
+                                    if (!hasStartedGenerating) {
+                                        loadingText.textContent = '生成中';
+                                        hasStartedGenerating = true;
+                                    }
+                                    messageData.answer += data.content;
+                                    messageContainer.updateAnswer(messageData.answer);
+                                }
+                            } catch (e) {
+                                console.error('Error parsing JSON:', e);
+                            }
+                        }
+                    }
+                }
+                
+                // 保存到历史记录
+                saveChatSession(query, messageData);
+                
+            } catch (error) {
+                addMessage(`系统错误: ${error.message}`);
+            } finally {
+                loading.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html> 

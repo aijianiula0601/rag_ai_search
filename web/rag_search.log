@@ -1,0 +1,1330 @@
+2025-01-11 08:23:39,658 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:23:39,723 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 08:23:39,723 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 08:23:39,724 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:23:46,634 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:23:46,695 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:23:46,696 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 08:24:04,960 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 08:24:04] "GET / HTTP/1.1" 200 -
+2025-01-11 08:24:18,939 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 08:24:18,944 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 08:24:20,352 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 08:24:20,353 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 08:24:20,353 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 08:24:20,353 - main - INFO - 改写后的查询: ['中国的治安状况怎么样？', '中国旅游安全状况如何？', '中国网络安全现状和挑战是什么？', '中国安全吗', '在中国旅行安全吗？']
+2025-01-11 08:24:23,579 - main - INFO - 获取到 94 条搜索结果
+2025-01-11 08:24:23,594 - main - INFO - 处理得到 94 个文档
+2025-01-11 08:24:24,783 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 08:24:39,882 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 08:24:39,884 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 08:24:39] "POST /search HTTP/1.1" 200 -
+2025-01-11 08:27:37,008 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:27:37,072 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 08:27:37,073 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 08:27:37,074 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:27:43,845 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:27:43,908 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:27:43,908 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 08:27:43,932 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 08:27:43] "GET / HTTP/1.1" 200 -
+2025-01-11 08:27:43,938 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 08:27:43] "GET / HTTP/1.1" 200 -
+2025-01-11 08:27:43,944 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 08:27:43] "GET / HTTP/1.1" 200 -
+2025-01-11 08:27:56,277 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 08:27:56,286 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 08:27:57,876 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 08:27:57,878 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 08:27:57,878 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 08:27:57,878 - main - INFO - 改写后的查询: ['中国的城市犯罪率如何？', '中国的治安情况怎么样？', '中国安全吗', '中国在国际恐怖主义威胁方面的防范措施有哪些？', '访问中国是否安全？']
+2025-01-11 08:28:00,277 - main - INFO - 获取到 77 条搜索结果
+2025-01-11 08:28:00,288 - main - INFO - 处理得到 77 个文档
+2025-01-11 08:28:01,265 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 08:28:18,422 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 08:28:18,664 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 08:28:18] "POST /search HTTP/1.1" 200 -
+2025-01-11 08:29:52,967 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/web/app.py', reloading
+2025-01-11 08:29:54,301 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:30:01,132 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:30:01,193 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:30:01,194 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 08:55:42,413 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-11 08:55:43,480 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:55:50,187 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:55:50,248 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:55:50,249 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 08:55:51,278 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-11 08:55:52,514 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:55:59,273 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:55:59,338 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:55:59,339 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 08:56:06,424 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-11 08:56:07,356 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:56:14,178 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:56:14,240 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:56:14,241 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 08:56:52,598 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-11 08:56:54,127 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:57:00,985 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:57:01,075 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:57:01,075 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 08:57:03,122 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-11 08:57:04,486 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:57:11,503 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:57:11,564 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:57:11,565 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 08:57:13,605 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-11 08:57:14,884 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:57:21,699 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:57:21,761 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:57:21,762 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 08:57:28,837 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-11 08:57:30,050 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:57:36,863 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:57:36,927 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:57:36,927 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 08:59:20,875 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/web/app.py', reloading
+2025-01-11 08:59:22,160 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:59:28,955 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:59:29,020 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:59:29,020 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 08:59:37,120 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/web/app.py', reloading
+2025-01-11 08:59:38,428 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 08:59:45,299 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 08:59:45,361 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 08:59:45,361 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 09:01:38,296 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 09:01:38,361 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 09:01:38,361 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 09:01:38,362 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 09:01:45,053 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 09:01:45,118 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 09:01:45,118 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 09:01:52,273 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:01:52] "GET / HTTP/1.1" 200 -
+2025-01-11 09:02:00,360 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:02:00,368 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 09:02:01,867 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:02:01,869 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 09:02:01,869 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 09:02:01,869 - main - INFO - 改写后的查询: ['中国治安情况在不同城市的对比分析', '中国的公共安全状况怎样？', '中国的社会治安水平如何？', '中国安全的治安如何', '中国公共安全领域的技术和政策发展趋势']
+2025-01-11 09:02:03,928 - main - INFO - 获取到 60 条搜索结果
+2025-01-11 09:02:03,937 - main - INFO - 处理得到 60 个文档
+2025-01-11 09:02:04,888 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 09:02:18,897 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:02:18,900 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:02:18] "POST /search HTTP/1.1" 200 -
+2025-01-11 09:18:19,491 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/web/app.py', reloading
+2025-01-11 09:18:20,741 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 09:18:28,197 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 09:18:28,260 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 09:18:28,260 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 09:19:57,015 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/web/app.py', reloading
+2025-01-11 09:19:58,169 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 09:20:05,097 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 09:20:05,159 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 09:20:05,159 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 09:20:05,178 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:20:05] "GET / HTTP/1.1" 200 -
+2025-01-11 09:20:11,665 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:20:11,673 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 09:20:12,680 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:20:12,682 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 09:20:12,682 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 09:20:12,682 - main - INFO - 改写后的查询: ['中国网络安全状况怎么样？', '中国的治安状况怎样？', '中国治安情况如何？', '旅游中国是否安全？', '中国安全吗']
+2025-01-11 09:20:15,640 - main - INFO - 获取到 81 条搜索结果
+2025-01-11 09:20:15,652 - main - INFO - 处理得到 81 个文档
+2025-01-11 09:20:16,701 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 09:20:32,969 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:20:32,971 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:20:32] "POST /search HTTP/1.1" 200 -
+2025-01-11 09:22:06,538 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 09:22:06,618 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 09:22:06,618 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 09:22:06,619 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 09:22:13,258 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 09:22:13,321 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 09:22:13,321 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 09:22:13,342 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:22:13] "GET / HTTP/1.1" 200 -
+2025-01-11 09:22:13,343 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:22:13] "GET / HTTP/1.1" 200 -
+2025-01-11 09:22:13,348 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:22:13] "GET / HTTP/1.1" 200 -
+2025-01-11 09:22:23,576 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:22:23] "GET / HTTP/1.1" 200 -
+2025-01-11 09:22:42,552 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:22:42,561 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 09:22:44,112 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:22:44,114 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 09:22:44,114 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 09:22:44,114 - main - INFO - 改写后的查询: ['中国是否已经研发出第六代战斗机？', '中国有六代机吗', '中国是否拥有六代战斗机技术？', '中国六代机与其他国家六代机的技术对比怎样？', '中国六代机的研发进展情况是什么？']
+2025-01-11 09:22:46,241 - main - INFO - 获取到 57 条搜索结果
+2025-01-11 09:22:46,253 - main - INFO - 处理得到 57 个文档
+2025-01-11 09:22:47,278 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 09:23:02,740 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:23:02,742 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:23:02] "POST /search HTTP/1.1" 200 -
+2025-01-11 09:26:00,424 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 09:26:00,488 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 09:26:00,488 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 09:26:00,489 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 09:26:07,370 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 09:26:07,432 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 09:26:07,433 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 09:26:07,450 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:26:07] "GET / HTTP/1.1" 200 -
+2025-01-11 09:26:07,451 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:26:07] "GET / HTTP/1.1" 200 -
+2025-01-11 09:26:14,982 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:26:14] "GET / HTTP/1.1" 200 -
+2025-01-11 09:26:31,217 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:26:31] "GET / HTTP/1.1" 200 -
+2025-01-11 09:26:38,275 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:26:38] "GET / HTTP/1.1" 200 -
+2025-01-11 09:26:39,533 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:26:39] "GET / HTTP/1.1" 200 -
+2025-01-11 09:26:40,000 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:26:40] "GET / HTTP/1.1" 200 -
+2025-01-11 09:28:35,542 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:28:35] "GET / HTTP/1.1" 200 -
+2025-01-11 09:28:43,221 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:28:43,235 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 09:28:44,336 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:28:44,338 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 09:28:44,338 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 09:28:44,338 - main - INFO - 改写后的查询: ['中国的治安状况怎样？', '中国的网络安全状况如何？', '中国安全吗', '旅行到中国是否安全？', '中国旅游安全状况评估？']
+2025-01-11 09:28:47,638 - main - INFO - 获取到 88 条搜索结果
+2025-01-11 09:28:47,658 - main - INFO - 处理得到 88 个文档
+2025-01-11 09:28:48,509 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 09:29:07,725 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:29:07,971 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:29:07] "POST /search HTTP/1.1" 200 -
+2025-01-11 09:32:32,589 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:32:32] "GET / HTTP/1.1" 200 -
+2025-01-11 09:32:42,300 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:32:42,301 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 09:32:43,925 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:32:43,926 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 09:32:43,927 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 09:32:43,927 - main - INFO - 改写后的查询: ['中国人的生活满意度如何在全球幸福指数中排名？', '中国民众的幸福感如何？', '中国居民感到幸福吗？', '中国社会中哪些因素最影响人们的幸福感？', '中国人幸福吗']
+2025-01-11 09:32:46,806 - main - INFO - 获取到 71 条搜索结果
+2025-01-11 09:32:46,818 - main - INFO - 处理得到 71 个文档
+2025-01-11 09:32:46,913 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 09:33:01,977 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:33:01,979 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:33:01] "POST /search HTTP/1.1" 200 -
+2025-01-11 09:34:05,667 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:34:05] "GET / HTTP/1.1" 200 -
+2025-01-11 09:34:30,876 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:34:30,877 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 09:34:33,042 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:34:33,043 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 09:34:33,043 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 09:34:33,043 - main - INFO - 改写后的查询: ['美国ai如何发展起来的', '美国人工智能是如何进展的？', '美国早期AI研究的主要学术机构和关键人物是谁？', '美国政府在AI领域的资助和政策是如何促进该行业发展的？', '美国在人工智能领域的发展历程是怎样的？']
+2025-01-11 09:34:36,178 - main - INFO - 获取到 84 条搜索结果
+2025-01-11 09:34:36,187 - main - INFO - 处理得到 84 个文档
+2025-01-11 09:34:36,275 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 09:34:59,637 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 09:34:59,883 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:34:59] "POST /search HTTP/1.1" 200 -
+2025-01-11 09:39:13,722 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 09:39:13] "GET / HTTP/1.1" 200 -
+2025-01-11 10:13:01,215 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:13:01,216 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 10:13:02,831 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:13:02,832 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 10:13:02,832 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 10:13:02,832 - main - INFO - 改写后的查询: ['spacex的成员有哪些', '哪些人是SpaceX的团队成员？', 'SpaceX公司的主要创始人和高级领导人员名单。', 'SpaceX的员工名单是什么？', 'SpaceX在不同部门工作的关键团队成员和工程师。']
+2025-01-11 10:13:05,681 - main - INFO - 获取到 87 条搜索结果
+2025-01-11 10:13:05,700 - main - INFO - 处理得到 87 个文档
+2025-01-11 10:13:05,793 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 10:13:22,558 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:13:22,560 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:13:22] "POST /search HTTP/1.1" 200 -
+2025-01-11 10:15:48,091 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 10:15:48,159 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 10:15:48,160 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 10:15:48,160 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 10:15:54,744 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 10:15:54,807 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 10:15:54,808 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 10:15:54,829 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:15:54] "GET / HTTP/1.1" 200 -
+2025-01-11 10:15:54,836 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:15:54] "GET / HTTP/1.1" 200 -
+2025-01-11 10:15:54,837 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:15:54] "GET / HTTP/1.1" 200 -
+2025-01-11 10:16:41,241 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:16:41,247 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 10:16:43,005 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:16:43,006 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 10:16:43,007 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 10:16:43,007 - main - INFO - 改写后的查询: ['外国人常用哪些社交应用程序？', '哪些社交平台在外国人中流行？', '外国人喜欢用什么社交软件', '在亚洲地区，外国人更倾向于使用哪些社交软件进行沟通？', '哪些国家的外国人最喜欢使用WhatsApp进行社交交流？']
+2025-01-11 10:16:45,828 - main - INFO - 获取到 76 条搜索结果
+2025-01-11 10:16:45,839 - main - INFO - 处理得到 76 个文档
+2025-01-11 10:16:46,960 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 10:16:52,966 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:16:52,969 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:16:52] "POST /search HTTP/1.1" 200 -
+2025-01-11 10:18:31,637 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:18:31] "GET / HTTP/1.1" 200 -
+2025-01-11 10:19:40,540 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:19:40,542 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 10:19:42,334 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:19:42,335 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 10:19:42,335 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 10:19:42,335 - main - INFO - 改写后的查询: ['火星哥在音乐颁奖典礼上获得过哪些奖项？', '火星哥的前五首最热门歌曲是哪些？', '火星哥的知名歌曲有哪些？', '火星哥有什么出名的歌曲', '布鲁诺·马尔斯的热门单曲都有哪些？']
+2025-01-11 10:19:44,924 - main - INFO - 获取到 76 条搜索结果
+2025-01-11 10:19:44,934 - main - INFO - 处理得到 76 个文档
+2025-01-11 10:19:45,023 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 10:19:58,479 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:19:58,481 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:19:58] "POST /search HTTP/1.1" 200 -
+2025-01-11 10:21:19,860 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:21:19,862 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 10:21:21,286 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:21:21,287 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 10:21:21,287 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 10:21:21,287 - main - INFO - 改写后的查询: ['哪位韩国歌手发布了名为apt的音乐作品？', 'apt这首歌 是韩国哪个艺人出的', 'apt这首歌的音乐风格和制作是怎样的？', 'apt这首歌的歌词主题是什么？', '这首apt歌曲是由哪位韩国艺术家演唱的？']
+2025-01-11 10:21:23,346 - main - INFO - 获取到 48 条搜索结果
+2025-01-11 10:21:23,351 - main - INFO - 处理得到 48 个文档
+2025-01-11 10:21:23,411 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 10:21:30,109 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:21:30,111 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:21:30] "POST /search HTTP/1.1" 200 -
+2025-01-11 10:24:07,453 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:24:07] "GET / HTTP/1.1" 200 -
+2025-01-11 10:24:12,509 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:24:12] "GET / HTTP/1.1" 200 -
+2025-01-11 10:24:27,973 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:24:27,974 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 10:24:29,329 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:24:29,330 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 10:24:29,330 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 10:24:29,330 - main - INFO - 改写后的查询: ['韩国现在的失业率情况如何？', '韩国的经济现状如何？', '韩国目前的GDP增长率是多少？', '韩国现在经济如何', '当前韩国的经济状况怎样？']
+2025-01-11 10:24:31,511 - main - INFO - 获取到 68 条搜索结果
+2025-01-11 10:24:31,519 - main - INFO - 处理得到 68 个文档
+2025-01-11 10:24:31,608 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 10:24:52,226 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:24:52,469 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:24:52] "POST /search HTTP/1.1" 200 -
+2025-01-11 10:25:28,887 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:25:28,889 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 10:25:30,090 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:25:30,091 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 10:25:30,092 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 10:25:30,092 - main - INFO - 改写后的查询: ['中国旅游安全状况如何？', '中国网络安全现状和挑战是什么？', '旅行到中国是否安全？', '中国的治安状况如何？', '中国安全吗']
+2025-01-11 10:25:32,765 - main - INFO - 获取到 86 条搜索结果
+2025-01-11 10:25:32,780 - main - INFO - 处理得到 86 个文档
+2025-01-11 10:25:32,868 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 10:25:49,832 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:25:50,080 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:25:50] "POST /search HTTP/1.1" 200 -
+2025-01-11 10:28:34,768 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:28:34] "GET / HTTP/1.1" 200 -
+2025-01-11 10:28:41,987 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:28:41,989 - core.query_processor - INFO - Generated 2 semantic rewrites
+2025-01-11 10:28:43,193 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:28:43,194 - core.query_processor - INFO - Generated 2 query expansions
+2025-01-11 10:28:43,195 - core.query_processor - INFO - Generated total 5 queries
+2025-01-11 10:28:43,195 - main - INFO - 改写后的查询: ['中国在网络安全方面采取了哪些措施？', '旅行到中国是否安全？', '中国安全吗', '中国的治安状况如何？', '中国的公共安全水平如何？']
+2025-01-11 10:28:46,060 - main - INFO - 获取到 99 条搜索结果
+2025-01-11 10:28:46,072 - main - INFO - 处理得到 99 个文档
+2025-01-11 10:28:46,192 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 10:29:02,170 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 10:29:02,173 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 10:29:02] "POST /search HTTP/1.1" 200 -
+2025-01-11 10:29:35,148 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/utils/gpt4_client.py', reloading
+2025-01-11 10:29:36,493 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 10:29:43,050 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 10:29:43,116 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 10:29:43,116 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 10:30:36,654 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/utils/gpt4_client.py', reloading
+2025-01-11 10:30:37,803 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 10:30:45,059 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 10:30:45,123 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 10:30:45,123 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 10:32:04,870 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/web/app.py', reloading
+2025-01-11 10:32:05,941 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 10:32:13,034 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 10:32:13,119 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 10:32:13,120 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 10:32:16,160 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-11 10:32:17,494 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 11:33:50,545 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 11:33:50,611 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 11:33:50,612 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 11:33:50,612 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 11:33:57,329 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 11:33:57,393 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 11:33:57,394 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 11:33:57,420 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:33:57] "GET / HTTP/1.1" 200 -
+2025-01-11 11:34:21,438 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:34:22,074 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 11:34:22,534 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:34:30,842 - core.query_processor - INFO - Generated 10 query expansions
+2025-01-11 11:34:30,842 - core.query_processor - INFO - Generated total 12 queries
+2025-01-11 11:34:30,843 - main - INFO - 改写后的查询: ['缅甸的电诈为什么灭不了', '电信诈骗在缅甸为何始终无法被根除？', '缅甸与其他国家合作打击跨国电信诈骗的效果如何？', '缅甸政府在打击电信诈骗方面采取了哪些措施？', '缅甸电诈活动的历史背景和发展情况是怎样的？', '社会经济因素如何影响缅甸的电信诈骗问题？', '受害者在缅甸电信诈骗中常见的特点和防范措施有哪些？', '国际合作在缅甸打击电信诈骗中扮演了什么角色？', '缅甸法律体系在打击电信诈骗方面存在哪些漏洞？', '缅甸电信诈骗活动中涉及的主要犯罪团伙有哪些？', '缅甸的网络基础设施是否给电信诈骗提供了便利条件？', '缅甸民众对电信诈骗的认识和防范意识如何？']
+2025-01-11 11:34:36,791 - main - INFO - 获取到 169 条搜索结果
+2025-01-11 11:34:36,811 - main - INFO - 处理得到 169 个文档
+2025-01-11 11:34:37,942 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 11:34:37,942 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:34:37] "POST /search HTTP/1.1" 200 -
+2025-01-11 11:34:39,300 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:41:11,302 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 11:41:11,368 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 11:41:11,369 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 11:41:11,369 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 11:41:18,335 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 11:41:18,398 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 11:41:18,398 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 11:41:50,155 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:41:50] "GET / HTTP/1.1" 200 -
+2025-01-11 11:41:53,811 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:41:54,416 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 11:41:54,880 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:41:58,704 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:41:58] "GET / HTTP/1.1" 200 -
+2025-01-11 11:42:02,188 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:42:02,840 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 11:42:03,311 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:42:03,751 - core.query_processor - INFO - Generated 10 query expansions
+2025-01-11 11:42:03,751 - core.query_processor - INFO - Generated total 12 queries
+2025-01-11 11:42:03,751 - main - INFO - 改写后的查询: ['为何缅甸的电话诈骗问题始终得不到解决？', '缅甸的电信基础设施有哪些漏洞被电信诈骗分子利用？', '缅甸政府是否有计划改善相关立法以更有效打击电信诈骗？', '缅甸与其他国家在打击跨国电信诈骗方面有哪些合作？', '缅甸政府目前对电信诈骗采取了哪些打击措施？', '如何评估缅甸电信诈骗案件的侦破率和犯罪嫌疑人的定罪率？', '缅甸民众对电信诈骗的认识和防范意识水平如何？', '缅甸的电诈为什么灭不了', '电信诈骗在缅甸的法律体系中是如何定义的？', '缅甸电信诈骗的主要受害群体有哪些？', '缅甸的法律制度存在哪些障碍，使得电信诈骗难以根除？', '缅甸的社会经济因素如何影响电信诈骗的蔓延？']
+2025-01-11 11:42:09,944 - main - INFO - 获取到 199 条搜索结果
+2025-01-11 11:42:09,984 - main - INFO - 处理得到 199 个文档
+2025-01-11 11:42:11,193 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 11:42:11,194 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:42:11] "POST /search HTTP/1.1" 200 -
+2025-01-11 11:42:11,657 - core.query_processor - INFO - Generated 10 query expansions
+2025-01-11 11:42:11,658 - core.query_processor - INFO - Generated total 12 queries
+2025-01-11 11:42:11,658 - main - INFO - 改写后的查询: ['缅甸的法律执行和警力资源对于电信诈骗案件处理的效率如何？', '在缅甸，电信诈骗的主要手段和目标受害者群体是什么？', '电信诈骗对缅甸经济和社会信任有何长期影响？', '为何缅甸的电话诈骗活动始终无法被根除？', '缅甸民众对于电信诈骗的认识和防范意识水平如何？', '缅甸的国际形象和电信诈骗活动是否存在相关影响？', '缅甸政府在打击电信诈骗方面采取了哪些法律措施？', '缅甸有哪些非政府组织参与电信诈骗的防范和宣教工作？', '缅甸的社会经济因素如何促成了电信诈骗的蔓延？', '缅甸与邻国在打击跨国电信诈骗方面有哪些合作？', '缅甸电信诈骗案件的成功定罪率是多少？', '缅甸的电诈为什么灭不了']
+2025-01-11 11:42:12,552 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:42:18,141 - main - INFO - 获取到 197 条搜索结果
+2025-01-11 11:42:18,164 - main - INFO - 处理得到 197 个文档
+2025-01-11 11:42:18,356 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 11:42:18,356 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:42:18] "POST /search HTTP/1.1" 200 -
+2025-01-11 11:42:19,707 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:45:35,529 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:45:35] "GET / HTTP/1.1" 200 -
+2025-01-11 11:45:41,579 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:45:41,886 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 11:45:42,338 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:45:42,585 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 11:45:42,586 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 11:45:42,586 - main - INFO - 改写后的查询: ['中国治安状况如何？', '中国的治安情况怎么样？', '中国安全吗']
+2025-01-11 11:45:44,402 - main - INFO - 获取到 58 条搜索结果
+2025-01-11 11:45:44,409 - main - INFO - 处理得到 58 个文档
+2025-01-11 11:45:44,474 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 11:45:44,475 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:45:44] "POST /search HTTP/1.1" 200 -
+2025-01-11 11:45:45,839 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:46:12,475 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:46:12,898 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 11:46:13,362 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:46:24,361 - core.query_processor - INFO - Generated 15 query expansions
+2025-01-11 11:46:24,361 - core.query_processor - INFO - Generated total 17 queries
+2025-01-11 11:46:24,361 - main - INFO - 改写后的查询: ['深度学习技术如何帮助提高制造业的生产效率？', '深度学习如何影响零售业的库存管理和定价策略？', '深度学习在金融领域的风险评估中扮演什么角色？', '深度学习在物流和供应链管理中的应用效果如何？', '深度学习在自然语言处理中的进展有哪些？', '深度学习对人工智能伦理问题有何影响？', '如何通过深度学习提高智能家居设备的智能化水平？', '深度学习如何改变了推荐系统的工作方式？', '深度学习对创造艺术作品（如音乐、绘画）有何影响？', '如何利用深度学习提高语音识别系统的准确率？', '深度学习技术在防止网络安全威胁方面的作用是什么？', '深度学习对我们产生了什么影响？', '深度学习如何提高医疗图像分析的准确性？', '深度学习如何促进个性化教育的发展？', '深度学习技术在自动驾驶汽车中的应用有哪些？', '深度学习对于视频游戏开发有哪些创新影响？', '深度学习是怎么影响我们的']
+2025-01-11 11:46:34,094 - main - INFO - 获取到 255 条搜索结果
+2025-01-11 11:46:34,122 - main - INFO - 处理得到 255 个文档
+2025-01-11 11:46:34,267 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 11:46:34,267 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:46:34] "POST /search HTTP/1.1" 200 -
+2025-01-11 11:46:35,620 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:48:15,800 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:48:15] "GET / HTTP/1.1" 200 -
+2025-01-11 11:49:04,486 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:49:04] "GET / HTTP/1.1" 200 -
+2025-01-11 11:49:08,724 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:49:09,056 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 11:49:09,511 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:49:09,980 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 11:49:09,980 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 11:49:09,980 - main - INFO - 改写后的查询: ['中国的治安状况怎么样？', '中国针对网络安全采取了哪些措施？', '中国安全吗']
+2025-01-11 11:49:11,369 - main - INFO - 获取到 51 条搜索结果
+2025-01-11 11:49:11,375 - main - INFO - 处理得到 51 个文档
+2025-01-11 11:49:11,434 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 11:49:11,434 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:49:11] "POST /search HTTP/1.1" 200 -
+2025-01-11 11:49:12,812 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:51:05,336 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:51:05] "GET / HTTP/1.1" 200 -
+2025-01-11 11:51:09,336 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:51:09,638 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 11:51:10,092 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:51:10,387 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 11:51:10,387 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 11:51:10,387 - main - INFO - 改写后的查询: ['中国的治安状况如何？', '中国的网络安全状况如何？', '中国安全吗']
+2025-01-11 11:51:11,957 - main - INFO - 获取到 50 条搜索结果
+2025-01-11 11:51:11,966 - main - INFO - 处理得到 50 个文档
+2025-01-11 11:51:12,029 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 11:51:12,030 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:51:12] "POST /search HTTP/1.1" 200 -
+2025-01-11 11:51:13,366 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:52:49,103 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:52:49] "GET / HTTP/1.1" 200 -
+2025-01-11 11:52:53,468 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:52:53,843 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 11:52:54,317 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:52:54,695 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 11:52:54,695 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 11:52:54,695 - main - INFO - 改写后的查询: ['中国的治安状况怎么样？', '中国旅游安全状况如何？', '中国安全吗']
+2025-01-11 11:52:56,265 - main - INFO - 获取到 58 条搜索结果
+2025-01-11 11:52:56,275 - main - INFO - 处理得到 58 个文档
+2025-01-11 11:52:56,347 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 11:52:56,347 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:52:56] "POST /search HTTP/1.1" 200 -
+2025-01-11 11:52:57,688 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:59:49,898 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 11:59:49] "GET / HTTP/1.1" 200 -
+2025-01-11 11:59:59,684 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 11:59:59,973 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:00:00,440 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:00:00,738 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 12:00:00,738 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 12:00:00,738 - main - INFO - 改写后的查询: ['中国的治安状况如何？', '中国安全吗', '中国旅游安全现状如何？']
+2025-01-11 12:00:01,927 - main - INFO - 获取到 52 条搜索结果
+2025-01-11 12:00:01,935 - main - INFO - 处理得到 52 个文档
+2025-01-11 12:00:01,977 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:00:01,978 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:00:01] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:00:03,354 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:01:20,747 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:01:20] "GET / HTTP/1.1" 200 -
+2025-01-11 12:01:26,050 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:01:26,334 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:01:26,791 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:01:27,111 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 12:01:27,112 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 12:01:27,112 - main - INFO - 改写后的查询: ['中国的治安状况如何？', '中国安全吗', '中国的城市犯罪率如何？']
+2025-01-11 12:01:28,675 - main - INFO - 获取到 57 条搜索结果
+2025-01-11 12:01:28,683 - main - INFO - 处理得到 57 个文档
+2025-01-11 12:01:28,747 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:01:28,747 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:01:28] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:01:30,107 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:05:58,903 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:05:58] "GET / HTTP/1.1" 200 -
+2025-01-11 12:06:02,492 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:06:02,820 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:06:03,268 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:06:03,743 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 12:06:03,744 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 12:06:03,744 - main - INFO - 改写后的查询: ['中国的治安状况怎么样？', '中国针对网络安全采取了哪些措施？', '中国安全吗']
+2025-01-11 12:06:04,998 - main - INFO - 获取到 51 条搜索结果
+2025-01-11 12:06:05,008 - main - INFO - 处理得到 51 个文档
+2025-01-11 12:06:05,077 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:06:05,077 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:06:05] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:06:06,403 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:06:41,560 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:06:41,938 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:06:42,412 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:06:51,523 - core.query_processor - INFO - Generated 10 query expansions
+2025-01-11 12:06:51,523 - core.query_processor - INFO - Generated total 12 queries
+2025-01-11 12:06:51,523 - main - INFO - 改写后的查询: ['如何通过深度学习技术增强社交媒体平台上的虚假信息检测？', '深度学习在医疗领域的应用是如何提高疾病诊断准确性的？', '深度学习对艺术创作的影响，如何通过它创造新的艺术风格？', '如何利用深度学习改进语音识别技术，从而影响人机交互？', '深度学习在金融领域是如何用于预测市场趋势和风险管理的？', '深度学习如何助力实现更精确的天气预测？', '在教育行业，深度学习如何个性化学习体验并提升学生学习效果？', '深度学习如何对我们产生影响？', '深度学习技术在视频游戏开发中是如何用于提升游戏AI的？', '深度学习技术如何改善自动驾驶汽车的安全性？', '深度学习是怎么影响我们的', '深度学习在零售业中是如何用于提高客户推荐系统的精准度的？']
+2025-01-11 12:06:58,290 - main - INFO - 获取到 203 条搜索结果
+2025-01-11 12:06:58,312 - main - INFO - 处理得到 203 个文档
+2025-01-11 12:06:58,517 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:06:58,518 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:06:58] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:06:59,880 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:08:38,409 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:08:38] "GET / HTTP/1.1" 200 -
+2025-01-11 12:08:43,491 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:08:43,821 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:08:44,276 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:08:44,721 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 12:08:44,721 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 12:08:44,721 - main - INFO - 改写后的查询: ['中国是教育是怎样的', '中国的基础教育体系是如何构建的？', '中国的教育体系如何运作？']
+2025-01-11 12:08:46,127 - main - INFO - 获取到 39 条搜索结果
+2025-01-11 12:08:46,132 - main - INFO - 处理得到 39 个文档
+2025-01-11 12:08:46,186 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:08:46,186 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:08:46] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:08:48,286 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:10:00,975 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:10:00] "GET / HTTP/1.1" 200 -
+2025-01-11 12:10:05,875 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:10:06,261 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:10:06,717 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:10:07,297 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 12:10:07,297 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 12:10:07,297 - main - INFO - 改写后的查询: ['中国是教育是怎样的', '教育在中国的情况如何？', '中国教育系统的历史沿革有哪些重要节点？']
+2025-01-11 12:10:08,804 - main - INFO - 获取到 48 条搜索结果
+2025-01-11 12:10:08,813 - main - INFO - 处理得到 48 个文档
+2025-01-11 12:10:08,879 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:10:08,879 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:10:08] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:10:10,752 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:12:27,041 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:12:27] "GET / HTTP/1.1" 200 -
+2025-01-11 12:12:31,107 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:12:31,392 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:12:31,844 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:12:32,215 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 12:12:32,216 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 12:12:32,216 - main - INFO - 改写后的查询: ['中国的街道犯罪率是多少？', '中国的治安状况如何？', '中国安全吗']
+2025-01-11 12:12:33,440 - main - INFO - 获取到 42 条搜索结果
+2025-01-11 12:12:33,445 - main - INFO - 处理得到 42 个文档
+2025-01-11 12:12:33,503 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:12:33,504 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:12:33] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:12:35,060 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:14:06,462 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:14:06] "GET / HTTP/1.1" 200 -
+2025-01-11 12:14:08,648 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:14:08] "GET / HTTP/1.1" 200 -
+2025-01-11 12:14:12,121 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:14:12,454 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:14:12,902 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:14:13,349 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 12:14:13,349 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 12:14:13,349 - main - INFO - 改写后的查询: ['中国是教育是怎样的', '中国的基础教育体系是如何构建的？', '中国的教育体系如何运作？']
+2025-01-11 12:14:14,968 - main - INFO - 获取到 55 条搜索结果
+2025-01-11 12:14:14,975 - main - INFO - 处理得到 55 个文档
+2025-01-11 12:14:15,045 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:14:15,046 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:14:15] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:14:16,379 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:15:04,534 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:15:04] "GET / HTTP/1.1" 200 -
+2025-01-11 12:15:08,820 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:15:09,103 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:15:09,554 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:15:09,874 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 12:15:09,874 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 12:15:09,874 - main - INFO - 改写后的查询: ['中国旅游安全状况如何？', '中国的治安状况如何？', '中国安全吗']
+2025-01-11 12:15:11,112 - main - INFO - 获取到 58 条搜索结果
+2025-01-11 12:15:11,123 - main - INFO - 处理得到 58 个文档
+2025-01-11 12:15:11,199 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:15:11,200 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:15:11] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:15:12,506 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:16:46,068 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:16:46] "GET / HTTP/1.1" 200 -
+2025-01-11 12:16:49,753 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:16:50,039 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:16:50,495 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:16:51,107 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 12:16:51,108 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 12:16:51,108 - main - INFO - 改写后的查询: ['中国的治安状况如何？', '中国的网络安全状况如何？', '中国安全吗']
+2025-01-11 12:16:52,877 - main - INFO - 获取到 56 条搜索结果
+2025-01-11 12:16:52,883 - main - INFO - 处理得到 56 个文档
+2025-01-11 12:16:52,949 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:16:52,950 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:16:52] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:16:54,307 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:17:11,278 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:17:11] "GET / HTTP/1.1" 200 -
+2025-01-11 12:17:37,619 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:17:37] "GET / HTTP/1.1" 200 -
+2025-01-11 12:17:41,835 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:17:42,205 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:17:42,660 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:17:43,105 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 12:17:43,105 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 12:17:43,105 - main - INFO - 改写后的查询: ['中国的教育体系是如何构成的？', '中国是教育是怎样的', '中国教育系统的历史发展是怎样的？']
+2025-01-11 12:17:44,508 - main - INFO - 获取到 48 条搜索结果
+2025-01-11 12:17:44,517 - main - INFO - 处理得到 48 个文档
+2025-01-11 12:17:44,582 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:17:44,583 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:17:44] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:17:45,888 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:18:04,022 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:18:04] "GET / HTTP/1.1" 200 -
+2025-01-11 12:18:29,661 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:18:29] "GET / HTTP/1.1" 200 -
+2025-01-11 12:18:32,133 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:18:32] "GET / HTTP/1.1" 200 -
+2025-01-11 12:18:35,713 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:18:35,978 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:18:36,436 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:18:36,832 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 12:18:36,833 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 12:18:36,833 - main - INFO - 改写后的查询: ['中国的网络安全法律和条例有哪些？', '中国的治安状况如何？', '中国安全吗']
+2025-01-11 12:18:38,200 - main - INFO - 获取到 48 条搜索结果
+2025-01-11 12:18:38,208 - main - INFO - 处理得到 48 个文档
+2025-01-11 12:18:38,270 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:18:38,270 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:18:38] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:18:39,573 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:18:57,745 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:18:58,233 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 12:18:58,705 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:19:07,676 - core.query_processor - INFO - Generated 10 query expansions
+2025-01-11 12:19:07,677 - core.query_processor - INFO - Generated total 12 queries
+2025-01-11 12:19:07,677 - main - INFO - 改写后的查询: ['深度学习算法在推荐系统中的作用及其对消费者购物体验的影响', '深度学习如何改进语音识别技术并影响智能助手的发展', '深度学习在语言翻译服务中的运用及其对跨文化交流的贡献', '深度学习如何帮助提高工业自动化水平和生产效率', '深度学习在图像识别领域的进展及其对安全监控系统的改进', '深度学习在医疗诊断中的应用和对患者预后的影响', '深度学习技术在自动驾驶汽车中的作用及其安全性问题', '深度学习在游戏开发中的应用及其对游戏体验的影响', '深度学习对我们日常生活有哪些影响？', '深度学习在金融行业中的应用及其对投资策略的影响', '深度学习是怎么影响我们的生活的', '深度学习对教育领域的影响，特别是在个性化学习和智能教学系统中的应用']
+2025-01-11 12:19:14,639 - main - INFO - 获取到 187 条搜索结果
+2025-01-11 12:19:14,658 - main - INFO - 处理得到 187 个文档
+2025-01-11 12:19:14,848 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 12:19:14,848 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:19:14] "POST /search HTTP/1.1" 200 -
+2025-01-11 12:19:16,217 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 12:19:38,246 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 12:19:38] "GET / HTTP/1.1" 200 -
+2025-01-11 14:52:46,496 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:52:46] "GET / HTTP/1.1" 200 -
+2025-01-11 14:52:49,087 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:52:49] "GET / HTTP/1.1" 200 -
+2025-01-11 14:53:13,791 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 14:53:14,148 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 14:53:14,609 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 14:53:15,201 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 14:53:15,201 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 14:53:15,201 - main - INFO - 改写后的查询: ['lora的原理是什么', 'lora技术是基于什么原理？', 'LoRa信号调制技术是如何实现远距离传输的？']
+2025-01-11 14:53:17,242 - main - INFO - 获取到 57 条搜索结果
+2025-01-11 14:53:17,251 - main - INFO - 处理得到 57 个文档
+2025-01-11 14:53:17,345 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 14:53:17,345 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:53:17] "POST /search HTTP/1.1" 200 -
+2025-01-11 14:53:18,692 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 14:53:36,104 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:53:36] "GET / HTTP/1.1" 200 -
+2025-01-11 14:53:38,039 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:53:38] "GET / HTTP/1.1" 200 -
+2025-01-11 14:56:05,153 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:56:05] "GET / HTTP/1.1" 200 -
+2025-01-11 14:56:23,758 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 14:56:24,193 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 14:56:24,660 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 14:56:25,434 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 14:56:25,434 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 14:56:25,434 - main - INFO - 改写后的查询: ['lora技术在数学上是如何原理化的？', 'Lora调制技术的工作原理是如何实现长距离低功耗通信的？', 'lora的数学原理是什么']
+2025-01-11 14:56:27,919 - main - INFO - 获取到 57 条搜索结果
+2025-01-11 14:56:27,927 - main - INFO - 处理得到 57 个文档
+2025-01-11 14:56:28,025 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 14:56:28,025 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:56:28] "POST /search HTTP/1.1" 200 -
+2025-01-11 14:56:29,363 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 14:56:45,826 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:56:45] "GET / HTTP/1.1" 200 -
+2025-01-11 14:56:47,222 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:56:47] "GET / HTTP/1.1" 200 -
+2025-01-11 14:56:51,438 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 14:56:51,718 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 14:56:52,166 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 14:56:52,469 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 14:56:52,469 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 14:56:52,469 - main - INFO - 改写后的查询: ['中国的治安状况如何？', '中国的网络安全状况如何？', '中国安全吗']
+2025-01-11 14:56:54,432 - main - INFO - 获取到 66 条搜索结果
+2025-01-11 14:56:54,442 - main - INFO - 处理得到 66 个文档
+2025-01-11 14:56:54,528 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 14:56:54,528 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:56:54] "POST /search HTTP/1.1" 200 -
+2025-01-11 14:56:56,025 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 14:57:33,713 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:57:33] "GET / HTTP/1.1" 200 -
+2025-01-11 14:58:30,568 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:58:30] "GET / HTTP/1.1" 200 -
+2025-01-11 14:58:32,305 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:58:32] "GET / HTTP/1.1" 200 -
+2025-01-11 14:58:35,853 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 14:58:36,270 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 14:58:36,728 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 14:58:37,202 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 14:58:37,202 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 14:58:37,202 - main - INFO - 改写后的查询: ['中国是教育是怎样的', '中国的教育系统具有什么样的特点？', '中国的基础教育体系结构是怎样的？']
+2025-01-11 14:58:39,489 - main - INFO - 获取到 69 条搜索结果
+2025-01-11 14:58:39,499 - main - INFO - 处理得到 69 个文档
+2025-01-11 14:58:39,599 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 14:58:39,599 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 14:58:39] "POST /search HTTP/1.1" 200 -
+2025-01-11 14:58:42,166 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:00:31,434 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:00:31] "GET / HTTP/1.1" 200 -
+2025-01-11 15:00:33,193 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:00:33] "GET / HTTP/1.1" 200 -
+2025-01-11 15:00:36,980 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:00:37,373 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 15:00:37,843 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:00:38,423 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 15:00:38,423 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 15:00:38,423 - main - INFO - 改写后的查询: ['中国是教育是怎样的', '中国的教育体系具有何种特点？', '中国教育系统的历史发展是怎样的？']
+2025-01-11 15:00:40,934 - main - INFO - 获取到 62 条搜索结果
+2025-01-11 15:00:40,943 - main - INFO - 处理得到 62 个文档
+2025-01-11 15:00:41,040 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 15:00:41,040 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:00:41] "POST /search HTTP/1.1" 200 -
+2025-01-11 15:00:42,373 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:01:21,849 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:01:21,854 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 15:01:22,310 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:01:29,021 - core.query_processor - INFO - Generated 9 query expansions
+2025-01-11 15:01:29,021 - core.query_processor - INFO - Generated total 11 queries
+2025-01-11 15:01:29,022 - main - INFO - 改写后的查询: ['数学中的加法定义是如何确保1+1等于2的？', '在非欧几何或其他非传统数学体系中，1+1等于2是否总是成立？', '在计算机编程中，是如何实现基本的加法运算确保1+1等于2的？', '1+1为什么等于2', '在哲学中，存在关于1+1等于2的讨论吗？', '1加1为什么结果是2？', '在量子力学或相对论领域，1+1等于2的等式是否有不同的解释？', '哪些数学公理系统用于证明1+1等于2？', '1+1等于2的概念在小学教育中是如何教授的？', '历史上最早是谁提出1+1等于2的数学原理？', '有没有文化或哲学观点认为1+1不等于2？']
+2025-01-11 15:01:35,787 - main - INFO - 获取到 177 条搜索结果
+2025-01-11 15:01:35,819 - main - INFO - 处理得到 177 个文档
+2025-01-11 15:01:36,024 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 15:01:36,025 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:01:36] "POST /search HTTP/1.1" 200 -
+2025-01-11 15:01:37,338 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:02:01,933 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:02:01] "GET / HTTP/1.1" 200 -
+2025-01-11 15:03:00,205 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:03:00] "GET / HTTP/1.1" 200 -
+2025-01-11 15:03:01,705 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:03:01] "GET / HTTP/1.1" 200 -
+2025-01-11 15:03:03,067 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:03:03] "GET / HTTP/1.1" 200 -
+2025-01-11 15:03:04,559 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:03:04] "GET / HTTP/1.1" 200 -
+2025-01-11 15:03:17,507 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:03:17,574 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 15:03:17,574 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 15:03:17,575 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:03:24,433 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:03:24,495 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:03:24,496 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:03:24,520 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:03:24] "GET / HTTP/1.1" 200 -
+2025-01-11 15:03:24,521 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:03:24] "GET / HTTP/1.1" 200 -
+2025-01-11 15:03:24,529 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:03:24] "GET / HTTP/1.1" 200 -
+2025-01-11 15:03:24,531 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:03:24] "GET / HTTP/1.1" 200 -
+2025-01-11 15:03:24,531 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:03:24] "GET / HTTP/1.1" 200 -
+2025-01-11 15:03:24,993 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:03:24] "GET / HTTP/1.1" 200 -
+2025-01-11 15:03:30,773 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:03:31,312 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 15:03:31,806 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:03:32,652 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 15:03:32,652 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 15:03:32,652 - main - INFO - 改写后的查询: ['深度学习对我们的生活有什么影响？', '深度学习在医疗领域的应用对患者诊疗有何影响？', '深度学习是怎么影响我们的']
+2025-01-11 15:03:34,080 - main - INFO - 获取到 37 条搜索结果
+2025-01-11 15:03:34,089 - main - INFO - 处理得到 37 个文档
+2025-01-11 15:03:35,085 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 15:03:35,085 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:03:35] "POST /search HTTP/1.1" 200 -
+2025-01-11 15:03:36,435 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:05:16,826 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:05:16] "GET / HTTP/1.1" 200 -
+2025-01-11 15:05:18,111 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:05:18] "GET / HTTP/1.1" 200 -
+2025-01-11 15:05:19,201 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:05:19] "GET / HTTP/1.1" 200 -
+2025-01-11 15:05:20,290 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:05:20] "GET / HTTP/1.1" 200 -
+2025-01-11 15:05:21,444 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:05:21] "GET / HTTP/1.1" 200 -
+2025-01-11 15:05:38,641 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:05:38] "GET / HTTP/1.1" 200 -
+2025-01-11 15:05:39,518 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:05:39] "GET / HTTP/1.1" 200 -
+2025-01-11 15:05:45,826 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:05:45] "GET / HTTP/1.1" 200 -
+2025-01-11 15:06:35,067 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:06:35] "GET / HTTP/1.1" 200 -
+2025-01-11 15:07:06,283 - werkzeug - ERROR - 169.136.75.198 - - [11/Jan/2025 15:07:06] code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03¼$q')
+2025-01-11 15:07:06,283 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:07:06] "[35m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03¼$q[0m" HTTPStatus.BAD_REQUEST -
+2025-01-11 15:07:06,416 - werkzeug - ERROR - 169.136.75.198 - - [11/Jan/2025 15:07:06] code 400, message Bad request version ('JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sjj\x00\x00\x00-\x00\x02\x01\x01\x00\x1b\x00\x03\x02\x00\x02\x003\x04ï\x04íJJ\x00\x01\x00\x11ì\x04À¨')
+2025-01-11 15:07:06,417 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:07:06] "[35m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03!ý\x98lÑÍøð*m\x00M\x019ØõØº¢Òh`\x9a²éH>Û\x18¸\x1b\x0b >XÒ\x1f\x8a¥´á\x1bË\x0fN±Ô'\x1dÛÇ\x04É,3\\æ\x85ï\x97(9Cn\x8d\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sjj\x00\x00\x00-\x00\x02\x01\x01\x00\x1b\x00\x03\x02\x00\x02\x003\x04ï\x04íJJ\x00\x01\x00\x11ì\x04À¨[0m" HTTPStatus.BAD_REQUEST -
+2025-01-11 15:07:06,490 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:07:06] "GET / HTTP/1.1" 200 -
+2025-01-11 15:07:10,790 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:07:11,072 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 15:07:11,527 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:07:11,848 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 15:07:11,848 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 15:07:11,848 - main - INFO - 改写后的查询: ['中国安全吗', '中国的公共治安状况如何？', '中国的治安状况如何？']
+2025-01-11 15:07:13,042 - main - INFO - 获取到 42 条搜索结果
+2025-01-11 15:07:13,050 - main - INFO - 处理得到 42 个文档
+2025-01-11 15:07:13,106 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 15:07:13,107 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:07:13] "POST /search HTTP/1.1" 200 -
+2025-01-11 15:07:14,453 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:07:25,696 - werkzeug - ERROR - 169.136.75.198 - - [11/Jan/2025 15:07:25] code 400, message Bad request version ('ÓI\x84\xad\x8aÞó\x01ÃJË\x10êó×çÖ%¥\x12§ª`zÆR')
+2025-01-11 15:07:25,697 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:07:25] "[35m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03q£2\x81{\x9eË7G\x03x;á%\x0bEÀª[\x95\x1d\x8dôÔåÛ{<³ë\x8f¤ ÓI\x84­\x8aÞó\x01ÃJË\x10êó×çÖ%¥\x12§ª`zÆR[0m" HTTPStatus.BAD_REQUEST -
+2025-01-11 15:07:25,711 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:07:25] "GET / HTTP/1.1" 200 -
+2025-01-11 15:07:25,828 - werkzeug - ERROR - 169.136.75.198 - - [11/Jan/2025 15:07:25] code 400, message Bad request version ('l=\x87÷\x06B¼\x8a\x13z\x07¿ì:\x07j\x86ô\x80\xad¦8©ZûÁ\x03dX%¦g+6?\x88¦\x80Z\x1a]ó\x189[Ù$\x9bØ0|°N¤ö´Ä§J\x95fw0È\x82±w>t\x90³ó\x06LâÅ')
+2025-01-11 15:07:25,828 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:07:25] "[35m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03$\x94Áâ¬óÍv\x9d\x80nZ\x05\x93l\x920\x11r3{\x85c\x18?\x9a\x0fÙ\x94_&\x8c "k¢\x9ct¶Ë\x8c\x9a?ç\x9dÓá(\x03\x9b+\x8f>\x16¯äÃz\x87V·,\x93fs\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x8a\x8a\x00\x00\x00#\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01Di\x00\x05\x00\x03\x02h2\x00\x17\x00\x00þ\x0d\x00º\x00\x00\x01\x00\x01X\x00 \x9f\x88»çÖFÈ²ÒÖ3.¯ \\ÅLUÛ\x82\x0fºû]\x0cvÆ¨\x1bª­o\x00\x90=ÉgN;Á"\x13\x01g³\x13\x9cà\x1dX\x85\x1a)\x09\x89õñ"D\x89\x83¦°á¡gdòÙi}"G\x8bê=\x99Z\x0béÐ;fP©£VF}yõ<.z®Ód³q\x94°ã¢Y\x04\x10N\x94r8aÊ}NK\x92K~¼Â\x90\x96"\x9b8\x81®vfØ®ì K¢\x9d\x04&\x8a¬\x00Ä\x9b\x05Svm\x96Çà\x8aÐñ¥SÆ²ª\x8b¼­PÍðÇ|\x8d\x7fÂ\x95JzÕE0é\x08$\x003\x04ï\x04ízz\x00\x01\x00\x11ì\x04ÀÊ\x84\x1biÛväÃi|$\x0cÊÚ3\x91T¨ª;\x7fy;!rðI­³\x15L§¥9l5+\x87w\x09l=\x87÷\x06B¼\x8a\x13z\x07¿ì:\x07j\x86ô\x80­¦8©ZûÁ\x03dX%¦g+6?\x88¦\x80Z\x1a]ó\x189[Ù$\x9bØ0|°N¤ö´Ä§J\x95fw0È\x82±w>t\x90³ó\x06LâÅ[0m" HTTPStatus.BAD_REQUEST -
+2025-01-11 15:07:27,038 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:07:27] "GET / HTTP/1.1" 200 -
+2025-01-11 15:07:30,409 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:07:30,816 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 15:07:31,272 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:07:31,740 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 15:07:31,740 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 15:07:31,740 - main - INFO - 改写后的查询: ['中国教育体系的基本结构是什么样的？', '中国是教育是怎样的', '中国的教育体系具有什么特点？']
+2025-01-11 15:07:33,319 - main - INFO - 获取到 58 条搜索结果
+2025-01-11 15:07:33,326 - main - INFO - 处理得到 58 个文档
+2025-01-11 15:07:33,416 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 15:07:33,417 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:07:33] "POST /search HTTP/1.1" 200 -
+2025-01-11 15:07:34,745 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:09:37,865 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:09:37] "GET / HTTP/1.1" 200 -
+2025-01-11 15:10:23,656 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:10:23] "GET / HTTP/1.1" 200 -
+2025-01-11 15:10:31,190 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:10:31] "GET / HTTP/1.1" 200 -
+2025-01-11 15:10:46,659 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:10:46,927 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 15:10:47,384 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:10:55,402 - core.query_processor - INFO - Generated 10 query expansions
+2025-01-11 15:10:55,403 - core.query_processor - INFO - Generated total 12 queries
+2025-01-11 15:10:55,403 - main - INFO - 改写后的查询: ['哲学角度：在逻辑哲学中，1+1等于2的意义是什么？', '求解1加1为何结果是2？', '数学基础：1+1等于2的公理化证明过程是什么？', '数学教育：学生常见的在理解1+1等于2时的误区有哪些？', '历史发展：数学史中，最早将1+1等于2形式化的数学家是谁？', '1+1为什么等于2', '数学符号学：1、+和2这些符号是如何演变来表示数学概念的？', '数学逻辑：1+1等于2在布尔逻辑中是如何表示的？', '教育学习：如何向儿童解释1+1等于2的概念？', '神经科学：人脑在理解1+1等于2时活跃的区域有哪些？', '数学哲学：1+1等于2是否在所有可能世界中都为真？', '计算机科学：在编程中，计算机是如何处理1+1等于2的运算的？']
+2025-01-11 15:11:01,871 - main - INFO - 获取到 179 条搜索结果
+2025-01-11 15:11:01,892 - main - INFO - 处理得到 179 个文档
+2025-01-11 15:11:02,053 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 15:11:02,053 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:11:02] "POST /search HTTP/1.1" 200 -
+2025-01-11 15:11:03,378 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:11:22,740 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:11:22] "GET / HTTP/1.1" 200 -
+2025-01-11 15:11:25,288 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:11:25] "GET / HTTP/1.1" 200 -
+2025-01-11 15:11:28,575 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:11:28] "GET / HTTP/1.1" 200 -
+2025-01-11 15:11:34,976 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:11:34] "GET / HTTP/1.1" 200 -
+2025-01-11 15:12:42,605 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:12:42] "GET / HTTP/1.1" 200 -
+2025-01-11 15:12:44,065 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:12:44] "GET / HTTP/1.1" 200 -
+2025-01-11 15:12:45,886 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:12:45] "GET / HTTP/1.1" 200 -
+2025-01-11 15:12:51,851 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:12:51] "GET / HTTP/1.1" 200 -
+2025-01-11 15:12:52,940 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:12:52] "GET / HTTP/1.1" 200 -
+2025-01-11 15:12:54,001 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:12:54] "GET / HTTP/1.1" 200 -
+2025-01-11 15:12:55,227 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:12:55] "GET / HTTP/1.1" 200 -
+2025-01-11 15:13:00,467 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:13:00] "GET / HTTP/1.1" 200 -
+2025-01-11 15:14:03,425 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:14:03] "GET / HTTP/1.1" 200 -
+2025-01-11 15:14:06,567 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:14:06] "GET / HTTP/1.1" 200 -
+2025-01-11 15:14:09,528 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:14:09] "GET / HTTP/1.1" 200 -
+2025-01-11 15:16:10,453 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:16:10] "GET / HTTP/1.1" 200 -
+2025-01-11 15:16:12,071 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:16:12] "GET / HTTP/1.1" 200 -
+2025-01-11 15:16:13,885 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:16:13] "GET / HTTP/1.1" 200 -
+2025-01-11 15:16:22,116 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:16:22] "GET / HTTP/1.1" 200 -
+2025-01-11 15:18:07,490 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:18:07] "GET / HTTP/1.1" 200 -
+2025-01-11 15:18:08,732 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:18:08] "GET / HTTP/1.1" 200 -
+2025-01-11 15:18:09,883 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:18:09] "GET / HTTP/1.1" 200 -
+2025-01-11 15:18:12,025 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:18:12] "GET / HTTP/1.1" 200 -
+2025-01-11 15:18:16,520 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:18:16] "GET / HTTP/1.1" 200 -
+2025-01-11 15:18:26,791 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:18:26,856 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 15:18:26,856 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 15:18:26,857 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:18:33,681 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:18:33,744 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:18:33,745 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:18:33,774 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:18:33] "GET / HTTP/1.1" 200 -
+2025-01-11 15:18:33,776 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:18:33] "GET / HTTP/1.1" 200 -
+2025-01-11 15:18:37,309 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:18:37] "GET / HTTP/1.1" 200 -
+2025-01-11 15:19:04,891 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:19:04] "GET / HTTP/1.1" 200 -
+2025-01-11 15:20:20,521 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:20:20] "GET / HTTP/1.1" 200 -
+2025-01-11 15:20:22,141 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:20:22] "GET / HTTP/1.1" 200 -
+2025-01-11 15:20:23,227 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:20:23] "GET / HTTP/1.1" 200 -
+2025-01-11 15:20:25,427 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:20:25] "GET / HTTP/1.1" 200 -
+2025-01-11 15:20:37,684 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:20:37] "GET / HTTP/1.1" 200 -
+2025-01-11 15:20:39,090 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:20:39] "GET / HTTP/1.1" 200 -
+2025-01-11 15:20:40,391 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:20:40] "GET / HTTP/1.1" 200 -
+2025-01-11 15:20:42,377 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:20:42] "GET / HTTP/1.1" 200 -
+2025-01-11 15:20:44,561 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:20:44] "GET / HTTP/1.1" 200 -
+2025-01-11 15:21:57,564 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:21:57] "GET / HTTP/1.1" 200 -
+2025-01-11 15:21:59,386 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:21:59] "GET / HTTP/1.1" 200 -
+2025-01-11 15:22:17,708 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:22:18,010 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 15:22:18,460 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:22:23,823 - core.query_processor - INFO - Generated 10 query expansions
+2025-01-11 15:22:23,823 - core.query_processor - INFO - Generated total 12 queries
+2025-01-11 15:22:23,823 - main - INFO - 改写后的查询: ['Lora在网络拓扑中是如何实现节点对节点通信的？', 'Lora与其他无线通信技术（如Wi-Fi、Bluetooth）相比有何优势？', 'Lora技术的安全性特点是什么？', 'lora技术是如何工作的？', 'Lora网络中的功耗管理策略是什么？', '如何实现Lora设备的网络接入和身份验证？', 'Lora通信的典型传输距离有多远？', 'LoraWAN协议在Lora技术中扮演什么角色？', 'Lora技术是如何支持多种不同应用场景的？', 'Lora技术中的调制方法是什么？', 'Lora技术的工作频率是多少？', 'lora的原理是什么']
+2025-01-11 15:22:31,593 - main - INFO - 获取到 164 条搜索结果
+2025-01-11 15:22:31,613 - main - INFO - 处理得到 164 个文档
+2025-01-11 15:22:32,670 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 15:22:32,671 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:22:32] "POST /search HTTP/1.1" 200 -
+2025-01-11 15:22:34,009 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:23:00,331 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:23:00] "GET / HTTP/1.1" 200 -
+2025-01-11 15:23:01,684 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:23:01] "GET / HTTP/1.1" 200 -
+2025-01-11 15:23:05,729 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:23:06,151 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-11 15:23:06,629 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:23:07,111 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-11 15:23:07,111 - core.query_processor - INFO - Generated total 3 queries
+2025-01-11 15:23:07,112 - main - INFO - 改写后的查询: ['lora调制技术的工作原理是如何的？', 'lora的原理是什么', 'lora技术的工作原理是如何的？']
+2025-01-11 15:23:08,365 - main - INFO - 获取到 42 条搜索结果
+2025-01-11 15:23:08,370 - main - INFO - 处理得到 42 个文档
+2025-01-11 15:23:08,437 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-11 15:23:08,437 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:23:08] "POST /search HTTP/1.1" 200 -
+2025-01-11 15:23:09,769 - httpx - INFO - HTTP Request: POST https://gpt4-test-cj-0803.openai.azure.com/openai/deployments/gpt4-16k/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-11 15:26:56,208 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:26:56] "GET / HTTP/1.1" 200 -
+2025-01-11 15:31:13,853 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/web/app.py', reloading
+2025-01-11 15:31:15,179 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:31:22,421 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:31:22,484 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:31:22,484 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:32:17,039 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/web/app.py', reloading
+2025-01-11 15:32:18,161 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:32:25,495 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:32:25,558 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:32:25,559 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:33:17,033 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/web/app.py', reloading
+2025-01-11 15:33:18,187 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:33:25,089 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:33:25,152 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:33:25,152 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:33:28,204 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/web/app.py', reloading
+2025-01-11 15:33:29,544 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:33:36,392 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:33:36,454 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:33:36,455 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:34:51,142 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/utils/ollama_client.py', reloading
+2025-01-11 15:34:52,333 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:34:59,135 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:34:59,198 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:34:59,199 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:35:19,404 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/web/app.py', reloading
+2025-01-11 15:35:20,550 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:35:27,471 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:35:27,534 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:35:27,535 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:36:14,977 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/tests/test_ollama_client.py', reloading
+2025-01-11 15:36:16,238 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:36:22,996 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:36:23,058 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:36:23,058 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:38:28,203 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/tests/test_ollama_client.py', reloading
+2025-01-11 15:38:29,265 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:38:36,080 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:38:36,142 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:38:36,142 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:39:03,852 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:39:03] "GET / HTTP/1.1" 200 -
+2025-01-11 15:39:04,425 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:39:04] "GET /models HTTP/1.1" 200 -
+2025-01-11 15:39:08,118 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:39:08] "GET / HTTP/1.1" 200 -
+2025-01-11 15:39:08,559 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:39:08] "GET /models HTTP/1.1" 200 -
+2025-01-11 15:55:24,823 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:55:24] "GET / HTTP/1.1" 200 -
+2025-01-11 15:55:26,507 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:55:26] "GET /models HTTP/1.1" 200 -
+2025-01-11 15:55:28,970 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:55:28] "GET / HTTP/1.1" 200 -
+2025-01-11 15:55:29,674 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:55:29] "GET /models HTTP/1.1" 200 -
+2025-01-11 15:55:43,659 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:55:43,725 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 15:55:43,725 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 15:55:43,726 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:55:50,700 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:55:50,764 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:55:50,765 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:55:52,395 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:55:52] "GET / HTTP/1.1" 200 -
+2025-01-11 15:55:52,975 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:55:52] "GET /models HTTP/1.1" 200 -
+2025-01-11 15:56:41,861 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:56:41] "GET / HTTP/1.1" 200 -
+2025-01-11 15:56:42,184 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:56:42] "GET /models HTTP/1.1" 200 -
+2025-01-11 15:57:04,349 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:57:04] "GET / HTTP/1.1" 200 -
+2025-01-11 15:57:05,274 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:57:05] "GET /models HTTP/1.1" 200 -
+2025-01-11 15:57:23,637 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/utils/ollama_client.py', reloading
+2025-01-11 15:57:24,804 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:57:31,851 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:57:31,915 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:57:31,915 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:57:50,904 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:57:50,968 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-11 15:57:50,968 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-11 15:57:50,969 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 15:57:57,739 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 15:57:57,801 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 15:57:57,802 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 15:57:57,828 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:57:57] "GET / HTTP/1.1" 200 -
+2025-01-11 15:57:57,837 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:57:57] "GET / HTTP/1.1" 200 -
+2025-01-11 15:57:57,840 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:57:57] "GET / HTTP/1.1" 200 -
+2025-01-11 15:57:57,841 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:57:57] "GET / HTTP/1.1" 200 -
+2025-01-11 15:57:58,913 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:57:58] "GET / HTTP/1.1" 200 -
+2025-01-11 15:57:58,985 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:57:58] "GET /models HTTP/1.1" 200 -
+2025-01-11 15:57:59,956 - werkzeug - INFO - 169.136.75.198 - - [11/Jan/2025 15:57:59] "GET /models HTTP/1.1" 200 -
+2025-01-11 16:12:31,883 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/config/config.py', reloading
+2025-01-11 16:12:33,012 - werkzeug - INFO -  * Restarting with stat
+2025-01-11 16:12:40,204 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-11 16:12:40,268 - werkzeug - WARNING -  * Debugger is active!
+2025-01-11 16:12:40,269 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-11 16:12:43,321 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/utils/ollama_client.py', reloading
+2025-01-11 16:12:44,539 - werkzeug - INFO -  * Restarting with stat
+2025-01-14 09:20:50,946 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-14 09:20:51,039 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-14 09:20:51,040 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-14 09:20:51,040 - werkzeug - INFO -  * Restarting with stat
+2025-01-14 09:20:57,894 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-14 09:20:57,957 - werkzeug - WARNING -  * Debugger is active!
+2025-01-14 09:20:57,957 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-14 09:21:15,080 - werkzeug - INFO - 169.136.75.207 - - [14/Jan/2025 09:21:15] "GET / HTTP/1.1" 200 -
+2025-01-14 09:21:17,090 - werkzeug - INFO - 169.136.75.207 - - [14/Jan/2025 09:21:17] "GET /models HTTP/1.1" 200 -
+2025-01-14 09:22:20,272 - werkzeug - INFO - 169.136.75.207 - - [14/Jan/2025 09:22:20] "GET / HTTP/1.1" 200 -
+2025-01-14 09:22:20,792 - werkzeug - INFO - 169.136.75.207 - - [14/Jan/2025 09:22:20] "GET /models HTTP/1.1" 200 -
+2025-01-14 09:22:44,603 - werkzeug - INFO - 169.136.75.207 - - [14/Jan/2025 09:22:44] "GET / HTTP/1.1" 200 -
+2025-01-14 09:22:46,183 - werkzeug - INFO - 169.136.75.207 - - [14/Jan/2025 09:22:46] "GET /models HTTP/1.1" 200 -
+2025-01-14 09:33:15,662 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/tests/test_ollama_client.py', reloading
+2025-01-14 09:33:16,686 - werkzeug - INFO -  * Restarting with stat
+2025-01-14 09:33:24,094 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-14 09:33:24,159 - werkzeug - WARNING -  * Debugger is active!
+2025-01-14 09:33:24,160 - werkzeug - INFO -  * Debugger PIN: 633-759-465
+2025-01-14 10:14:34,542 - werkzeug - INFO - 169.136.150.175 - - [14/Jan/2025 10:14:34] "GET / HTTP/1.1" 200 -
+2025-01-14 10:14:34,547 - werkzeug - INFO - 169.136.150.175 - - [14/Jan/2025 10:14:34] "GET / HTTP/1.1" 200 -
+2025-01-14 10:14:34,568 - werkzeug - INFO - 169.136.150.175 - - [14/Jan/2025 10:14:34] "GET /console HTTP/1.1" 200 -
+2025-01-21 20:45:57,389 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 20:45:57,476 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-21 20:45:57,476 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 20:45:57,477 - werkzeug - INFO -  * Restarting with stat
+2025-01-21 20:46:03,499 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 20:46:03,559 - werkzeug - WARNING -  * Debugger is active!
+2025-01-21 20:46:03,559 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-21 20:46:03,585 - werkzeug - INFO - 169.136.75.207 - - [21/Jan/2025 20:46:03] "GET / HTTP/1.1" 200 -
+2025-01-21 20:46:04,164 - werkzeug - INFO - 169.136.75.207 - - [21/Jan/2025 20:46:04] "GET /models HTTP/1.1" 200 -
+2025-01-21 20:46:13,674 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-21 20:46:13,745 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-21 20:46:14,011 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-21 20:46:14,335 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-21 20:46:14,335 - core.query_processor - INFO - Generated total 3 queries
+2025-01-21 20:46:14,335 - main - INFO - 改写后的查询: ['1+1的数学证明有哪些不同的方法？', '1+1为什么等于2', '1加1的结果为何是2？']
+2025-01-21 20:46:16,450 - main - INFO - 获取到 56 条搜索结果
+2025-01-21 20:46:16,459 - main - INFO - 处理得到 56 个文档
+2025-01-21 20:46:17,020 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-21 20:46:17,072 - werkzeug - INFO - 169.136.75.207 - - [21/Jan/2025 20:46:17] "POST /search HTTP/1.1" 200 -
+2025-01-21 20:46:17,978 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-21 20:47:01,091 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/core/document_processor.py', reloading
+2025-01-21 20:47:02,112 - werkzeug - INFO -  * Restarting with stat
+2025-01-21 20:47:09,420 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 20:47:09,480 - werkzeug - WARNING -  * Debugger is active!
+2025-01-21 20:47:09,481 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-21 20:47:18,589 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/core/document_processor.py', reloading
+2025-01-21 20:47:19,344 - werkzeug - INFO -  * Restarting with stat
+2025-01-21 20:47:25,299 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 20:47:25,359 - werkzeug - WARNING -  * Debugger is active!
+2025-01-21 20:47:25,359 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-21 20:47:41,536 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-21 20:47:41,592 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-21 20:47:41,854 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-21 20:47:41,971 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-21 20:47:41,971 - core.query_processor - INFO - Generated total 3 queries
+2025-01-21 20:47:41,971 - main - INFO - 改写后的查询: ['lora的原理是什么', 'lora的调制解调技术具体是怎样工作的？', 'lora的工作原理是什么？']
+2025-01-21 20:47:44,029 - main - INFO - 获取到 49 条搜索结果
+2025-01-21 20:47:44,039 - main - INFO - 处理得到 49 个文档
+2025-01-21 20:47:44,594 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-21 20:47:44,647 - werkzeug - INFO - 169.136.75.207 - - [21/Jan/2025 20:47:44] "POST /search HTTP/1.1" 200 -
+2025-01-21 20:47:46,032 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-21 20:47:59,652 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/core/document_processor.py', reloading
+2025-01-21 20:48:00,662 - werkzeug - INFO -  * Restarting with stat
+2025-01-21 20:48:06,944 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 20:48:07,004 - werkzeug - WARNING -  * Debugger is active!
+2025-01-21 20:48:07,004 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-21 20:48:08,035 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/core/document_processor.py', reloading
+2025-01-21 20:48:08,844 - werkzeug - INFO -  * Restarting with stat
+2025-01-21 20:48:15,060 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 20:48:15,120 - werkzeug - WARNING -  * Debugger is active!
+2025-01-21 20:48:15,120 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-21 20:48:20,185 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/core/document_processor.py', reloading
+2025-01-21 20:48:20,957 - werkzeug - INFO -  * Restarting with stat
+2025-01-21 20:48:27,663 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 20:48:27,723 - werkzeug - WARNING -  * Debugger is active!
+2025-01-21 20:48:27,724 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-21 20:48:30,773 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/core/document_processor.py', reloading
+2025-01-21 20:48:31,667 - werkzeug - INFO -  * Restarting with stat
+2025-01-21 20:48:37,765 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 20:48:37,825 - werkzeug - WARNING -  * Debugger is active!
+2025-01-21 20:48:37,825 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-21 20:48:51,717 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-21 20:48:51,815 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-21 20:48:52,098 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-21 20:48:52,364 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-21 20:48:52,364 - core.query_processor - INFO - Generated total 3 queries
+2025-01-21 20:48:52,364 - main - INFO - 改写后的查询: ['中国与缅甸之间的历史关系如何影响两国的外交政策？', '中国为什么不打缅甸', '中国为何选择不对缅甸采取军事行动？']
+2025-01-21 20:48:54,522 - main - INFO - 获取到 57 条搜索结果
+2025-01-21 20:48:54,532 - main - INFO - 处理得到 57 个文档
+2025-01-21 20:48:55,091 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-21 20:48:55,144 - werkzeug - INFO - 169.136.75.207 - - [21/Jan/2025 20:48:55] "POST /search HTTP/1.1" 200 -
+2025-01-21 20:48:57,001 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-21 22:34:45,455 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/config/settings.py', reloading
+2025-01-21 22:34:46,662 - werkzeug - INFO -  * Restarting with stat
+2025-01-21 22:34:52,676 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 22:34:52,735 - werkzeug - WARNING -  * Debugger is active!
+2025-01-21 22:34:52,735 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-21 22:35:24,745 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 22:36:17,442 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 22:36:17,502 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-21 22:36:17,503 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-21 22:36:17,503 - werkzeug - INFO -  * Restarting with stat
+2025-01-21 22:36:23,825 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-21 22:36:23,886 - werkzeug - WARNING -  * Debugger is active!
+2025-01-21 22:36:23,886 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-21 22:36:35,109 - werkzeug - INFO - 169.136.75.197 - - [21/Jan/2025 22:36:35] "GET / HTTP/1.1" 200 -
+2025-01-21 22:36:36,255 - werkzeug - INFO - 169.136.75.197 - - [21/Jan/2025 22:36:36] "GET /models HTTP/1.1" 200 -
+2025-01-21 22:36:45,074 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-21 22:36:45,134 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-21 22:36:45,396 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-21 22:36:45,497 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-21 22:36:45,497 - core.query_processor - INFO - Generated total 3 queries
+2025-01-21 22:36:45,497 - main - INFO - 改写后的查询: ['- docker安装searxng的步骤和配置文件详细介绍是什么？', '怎么docker方式安装searxng', '如何通过Docker安装searxng？']
+2025-01-21 22:36:47,576 - main - INFO - 获取到 47 条搜索结果
+2025-01-21 22:36:47,587 - main - INFO - 处理得到 47 个文档
+2025-01-21 22:36:48,141 - main - INFO - 重排序得到 20 个相关文本块
+2025-01-21 22:36:48,193 - werkzeug - INFO - 169.136.75.197 - - [21/Jan/2025 22:36:48] "POST /search HTTP/1.1" 200 -
+2025-01-21 22:36:49,107 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:26:08,366 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:26:08,428 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-27 16:26:08,429 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 16:26:08,429 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:26:14,522 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:26:14,581 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:26:14,581 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:26:14,605 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:26:14] "GET / HTTP/1.1" 200 -
+2025-01-27 16:26:15,583 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:26:15] "GET /models HTTP/1.1" 200 -
+2025-01-27 16:26:20,857 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:26:20,919 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-27 16:26:21,210 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:26:21,325 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-27 16:26:21,325 - core.query_processor - INFO - Generated total 3 queries
+2025-01-27 16:26:21,325 - main - INFO - 改写后的查询: ['今天是几号', '今天的日期是多少？', '今天的日期在不同的时区是什么时候？']
+2025-01-27 16:26:23,424 - main - INFO - 获取到 66 条搜索结果
+2025-01-27 16:26:23,436 - main - INFO - 处理得到 66 个文档
+2025-01-27 16:26:24,056 - main - INFO - 重排序得到 20 个相关文本块
+2025-01-27 16:26:24,108 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:26:24] "POST /search HTTP/1.1" 200 -
+2025-01-27 16:26:24,955 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:28:04,287 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:28:04,325 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-27 16:28:04,660 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:28:04,735 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-27 16:28:04,735 - core.query_processor - INFO - Generated total 3 queries
+2025-01-27 16:28:04,735 - main - INFO - 改写后的查询: ['人工智能的主要应用领域有哪些？', '人工智能的定义是什么？', '人工智能是什么']
+2025-01-27 16:28:06,895 - main - INFO - 获取到 57 条搜索结果
+2025-01-27 16:28:06,905 - main - INFO - 处理得到 57 个文档
+2025-01-27 16:28:06,948 - main - INFO - 重排序得到 20 个相关文本块
+2025-01-27 16:28:07,000 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:28:07] "POST /search HTTP/1.1" 200 -
+2025-01-27 16:28:07,852 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:29:17,762 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:29:17] "GET / HTTP/1.1" 200 -
+2025-01-27 16:29:18,651 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:29:18] "GET /models HTTP/1.1" 200 -
+2025-01-27 16:29:26,819 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:29:26,991 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-27 16:29:27,247 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:29:27,368 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-27 16:29:27,369 - core.query_processor - INFO - Generated total 3 queries
+2025-01-27 16:29:27,369 - main - INFO - 改写后的查询: ['中国式教育的应试教育模式对学生心理健康的影响是什么？', '中国的教育体系存在哪些问题？', '中国式教育有什么问题']
+2025-01-27 16:29:29,506 - main - INFO - 获取到 58 条搜索结果
+2025-01-27 16:29:29,515 - main - INFO - 处理得到 58 个文档
+2025-01-27 16:29:29,561 - main - INFO - 重排序得到 20 个相关文本块
+2025-01-27 16:29:29,613 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:29:29] "POST /search HTTP/1.1" 200 -
+2025-01-27 16:29:30,498 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:30:42,691 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/core/document_processor.py', reloading
+2025-01-27 16:30:43,844 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:30:52,635 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:30:52,696 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-27 16:30:52,696 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 16:30:52,697 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:30:58,643 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:30:58,703 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:30:58,703 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:30:58,730 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:30:58] "GET / HTTP/1.1" 200 -
+2025-01-27 16:30:59,448 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:30:59] "GET /models HTTP/1.1" 200 -
+2025-01-27 16:31:16,312 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:31:16,354 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-27 16:31:16,641 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:31:16,688 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-27 16:31:16,688 - core.query_processor - INFO - Generated total 3 queries
+2025-01-27 16:31:16,688 - main - INFO - 改写后的查询: ['中国教育改革的主要挑战是什么？', '中国教育面临哪些挑战？', '中国教育存在什么问题']
+2025-01-27 16:31:18,867 - main - INFO - 获取到 56 条搜索结果
+2025-01-27 16:31:18,878 - main - INFO - 处理得到 56 个文档
+2025-01-27 16:31:19,445 - main - INFO - 重排序得到 20 个相关文本块
+2025-01-27 16:31:19,497 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:31:19] "POST /search HTTP/1.1" 200 -
+2025-01-27 16:31:20,350 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:32:42,591 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/core/document_processor.py', reloading
+2025-01-27 16:32:43,503 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:32:55,824 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:32:55,885 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-27 16:32:55,885 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 16:32:55,886 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:33:01,874 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:33:01,936 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:33:01,936 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:33:01,962 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:33:01] "GET / HTTP/1.1" 200 -
+2025-01-27 16:33:02,693 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:33:02] "GET /models HTTP/1.1" 200 -
+2025-01-27 16:33:11,773 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:33:11,806 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-27 16:33:12,078 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:33:12,147 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-27 16:33:12,148 - core.query_processor - INFO - Generated total 3 queries
+2025-01-27 16:33:12,148 - main - INFO - 改写后的查询: ['人工智能的主要应用领域有哪些？', '人工智能是什么', '人工智能的定义是什么？']
+2025-01-27 16:33:14,308 - main - INFO - 获取到 56 条搜索结果
+2025-01-27 16:33:14,319 - main - INFO - 处理得到 56 个文档
+2025-01-27 16:33:14,893 - main - INFO - 重排序得到 20 个相关文本块
+2025-01-27 16:33:14,946 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:33:14] "POST /search HTTP/1.1" 200 -
+2025-01-27 16:33:15,814 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:37:19,897 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-27 16:37:20,872 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:37:26,921 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:37:26,981 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:37:26,981 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:37:30,032 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-27 16:37:30,829 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:37:36,822 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:37:36,881 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:37:36,882 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:37:37,913 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-27 16:37:38,715 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:37:44,848 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:37:44,908 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:37:44,908 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:37:48,966 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-27 16:37:49,993 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:37:56,202 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:37:56,262 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:37:56,263 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:37:59,307 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-27 16:38:00,169 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:38:06,190 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:38:06,250 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:38:06,250 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:38:11,314 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/core/document_processor.py', reloading
+2025-01-27 16:38:12,161 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:38:18,255 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:38:18,315 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:38:18,315 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:38:23,255 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:38:23] "GET / HTTP/1.1" 200 -
+2025-01-27 16:38:25,616 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:38:25] "GET /models HTTP/1.1" 200 -
+2025-01-27 16:38:30,628 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:38:30,674 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-27 16:38:30,927 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:38:30,991 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-27 16:38:30,991 - core.query_processor - INFO - Generated total 3 queries
+2025-01-27 16:38:30,991 - main - INFO - 改写后的查询: ['lora技术在物联网中的应用有哪些？', 'lora的原理是什么', 'lora的工作原理是什么？']
+2025-01-27 16:38:33,566 - main - INFO - 获取到 54 条搜索结果
+2025-01-27 16:38:33,574 - main - INFO - 处理得到 54 个文档
+2025-01-27 16:38:34,143 - main - INFO - 重排序得到 20 个相关文本块
+2025-01-27 16:38:34,195 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:38:34] "POST /search HTTP/1.1" 200 -
+2025-01-27 16:38:35,089 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:42:11,186 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/core/llm_handler.py', reloading
+2025-01-27 16:42:12,226 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:42:18,298 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:42:18,357 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:42:18,357 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:58:03,529 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/config/settings.py', reloading
+2025-01-27 16:58:04,372 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:58:10,435 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:58:10,495 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:58:10,495 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:58:13,541 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/main.py', reloading
+2025-01-27 16:58:14,414 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:58:21,038 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:58:21,098 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:58:21,098 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:58:40,758 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:58:40,820 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-27 16:58:40,820 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 16:58:40,821 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:58:46,864 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:58:46,924 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:58:46,924 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:58:46,949 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:58:46] "GET / HTTP/1.1" 200 -
+2025-01-27 16:58:46,959 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:58:46] "GET / HTTP/1.1" 200 -
+2025-01-27 16:58:47,235 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:58:47] "GET /models HTTP/1.1" 200 -
+2025-01-27 16:58:51,738 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:58:51,761 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-27 16:58:52,022 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:58:52,061 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-27 16:58:52,062 - core.query_processor - INFO - Generated total 3 queries
+2025-01-27 16:58:52,062 - main - INFO - 改写后的查询: ['人工智能的定义是什么？', '人工智能的主要应用领域有哪些？', '人工智能是什么']
+2025-01-27 16:58:54,000 - main - INFO - 获取到 66 条搜索结果
+2025-01-27 16:58:54,010 - main - INFO - 处理得到 66 个文档
+2025-01-27 16:58:54,569 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-27 16:58:54,621 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:58:54] "POST /search HTTP/1.1" 200 -
+2025-01-27 16:58:55,464 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 16:59:45,437 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/config/settings.py', reloading
+2025-01-27 16:59:46,409 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 16:59:52,394 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 16:59:52,453 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 16:59:52,454 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 16:59:52,479 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:59:52] "GET / HTTP/1.1" 200 -
+2025-01-27 16:59:52,480 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:59:52] "GET / HTTP/1.1" 200 -
+2025-01-27 16:59:52,726 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 16:59:52] "GET /models HTTP/1.1" 200 -
+2025-01-27 17:00:02,243 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:00:02,291 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-27 17:00:02,551 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:00:02,605 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-27 17:00:02,605 - core.query_processor - INFO - Generated total 3 queries
+2025-01-27 17:00:02,605 - main - INFO - 改写后的查询: ['rag是什么技术', 'rag技术的应用场景有哪些？', 'rag技术指的是什么？']
+2025-01-27 17:00:04,773 - main - INFO - 获取到 55 条搜索结果
+2025-01-27 17:00:04,782 - main - INFO - 处理得到 55 个文档
+2025-01-27 17:00:05,410 - main - INFO - 重排序得到 10 个相关文本块
+2025-01-27 17:00:05,463 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 17:00:05] "POST /search HTTP/1.1" 200 -
+2025-01-27 17:00:06,322 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:12:09,291 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:12:09,340 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-27 17:12:09,607 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:12:09,650 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-27 17:12:09,651 - core.query_processor - INFO - Generated total 3 queries
+2025-01-27 17:12:09,651 - main - INFO - 改写后的查询: ['人工智能的定义是什么？', '人工智能的主要应用领域有哪些？', '人工智能是什么']
+2025-01-27 17:12:11,669 - main - INFO - 获取到 57 条搜索结果
+2025-01-27 17:12:11,679 - main - INFO - 处理得到 57 个文档
+2025-01-27 17:12:11,726 - main - INFO - 重排序得到 10 个相关文本块
+2025-01-27 17:12:11,778 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 17:12:11] "POST /search HTTP/1.1" 200 -
+2025-01-27 17:12:12,611 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:12:24,267 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/config/settings.py', reloading
+2025-01-27 17:12:25,270 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 17:12:31,286 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 17:12:31,345 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 17:12:31,346 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-27 17:12:31,374 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 17:12:31] "GET / HTTP/1.1" 200 -
+2025-01-27 17:12:32,288 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 17:12:32] "GET /models HTTP/1.1" 200 -
+2025-01-27 17:12:35,922 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:12:35,968 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-27 17:12:36,237 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:12:36,305 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-27 17:12:36,305 - core.query_processor - INFO - Generated total 3 queries
+2025-01-27 17:12:36,306 - main - INFO - 改写后的查询: ['人工智能的主要应用领域有哪些？', '人工智能是什么', '人工智能的定义是什么？']
+2025-01-27 17:12:38,820 - main - INFO - 获取到 58 条搜索结果
+2025-01-27 17:12:38,829 - main - INFO - 处理得到 58 个文档
+2025-01-27 17:12:39,351 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-27 17:12:39,403 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 17:12:39] "POST /search HTTP/1.1" 200 -
+2025-01-27 17:12:40,275 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:12:58,647 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:12:58,678 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-27 17:12:58,940 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:12:58,999 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-27 17:12:58,999 - core.query_processor - INFO - Generated total 3 queries
+2025-01-27 17:12:59,000 - main - INFO - 改写后的查询: ['rag是什么技术', 'rag技术的应用场景有哪些？', 'rag技术指的是什么？']
+2025-01-27 17:13:01,266 - main - INFO - 获取到 53 条搜索结果
+2025-01-27 17:13:01,274 - main - INFO - 处理得到 53 个文档
+2025-01-27 17:13:01,320 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-27 17:13:01,371 - werkzeug - INFO - 169.136.75.201 - - [27/Jan/2025 17:13:01] "POST /search HTTP/1.1" 200 -
+2025-01-27 17:13:02,274 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-27 17:28:25,790 - werkzeug - INFO -  * Detected change in '/mnt/cephfs/hjh/pycharm_projects/nlp/rag_ai_search/config/settings.py', reloading
+2025-01-27 17:28:26,764 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 17:28:52,765 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 17:28:52,829 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-27 17:28:52,829 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 17:28:52,830 - werkzeug - INFO -  * Restarting with stat
+2025-01-27 17:28:58,940 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-27 17:28:59,002 - werkzeug - WARNING -  * Debugger is active!
+2025-01-27 17:28:59,002 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-28 00:15:48,777 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-28 00:15:48,842 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://202.168.100.165:5000
+2025-01-28 00:15:48,842 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-01-28 00:15:48,843 - werkzeug - INFO -  * Restarting with stat
+2025-01-28 00:15:54,854 - sentence_transformers.cross_encoder.CrossEncoder - INFO - Use pytorch device: cuda
+2025-01-28 00:15:54,915 - werkzeug - WARNING -  * Debugger is active!
+2025-01-28 00:15:54,915 - werkzeug - INFO -  * Debugger PIN: 982-890-758
+2025-01-28 00:15:54,943 - werkzeug - INFO - 169.136.75.201 - - [28/Jan/2025 00:15:54] "GET / HTTP/1.1" 200 -
+2025-01-28 00:15:54,953 - werkzeug - INFO - 169.136.75.201 - - [28/Jan/2025 00:15:54] "GET / HTTP/1.1" 200 -
+2025-01-28 00:15:55,958 - werkzeug - INFO - 169.136.75.201 - - [28/Jan/2025 00:15:55] "GET /models HTTP/1.1" 200 -
+2025-01-28 00:16:02,055 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-28 00:16:02,755 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-28 00:16:03,035 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-28 00:16:03,095 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-28 00:16:03,095 - core.query_processor - INFO - Generated total 3 queries
+2025-01-28 00:16:03,095 - main - INFO - 改写后的查询: ['今天是哪一天？', '今天是几号', '今天是星期几？']
+2025-01-28 00:16:05,221 - main - INFO - 获取到 77 条搜索结果
+2025-01-28 00:16:05,232 - main - INFO - 处理得到 77 个文档
+2025-01-28 00:16:05,807 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-28 00:16:05,859 - werkzeug - INFO - 169.136.75.201 - - [28/Jan/2025 00:16:05] "POST /search HTTP/1.1" 200 -
+2025-01-28 00:16:06,721 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-28 00:16:58,282 - werkzeug - INFO - 169.136.75.201 - - [28/Jan/2025 00:16:58] "GET / HTTP/1.1" 200 -
+2025-01-28 00:16:58,558 - werkzeug - INFO - 169.136.75.201 - - [28/Jan/2025 00:16:58] "GET /models HTTP/1.1" 200 -
+2025-01-28 00:17:02,907 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-28 00:17:03,207 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-28 00:17:03,485 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-28 00:17:03,545 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-28 00:17:03,545 - core.query_processor - INFO - Generated total 3 queries
+2025-01-28 00:17:03,545 - main - INFO - 改写后的查询: ['中国的治安情况如何？', '中国安全吗', '中国的安全情况如何？']
+2025-01-28 00:17:05,572 - main - INFO - 获取到 59 条搜索结果
+2025-01-28 00:17:05,580 - main - INFO - 处理得到 59 个文档
+2025-01-28 00:17:05,625 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-28 00:17:05,677 - werkzeug - INFO - 169.136.75.201 - - [28/Jan/2025 00:17:05] "POST /search HTTP/1.1" 200 -
+2025-01-28 00:17:06,530 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-28 00:17:17,032 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-28 00:17:17,061 - core.query_processor - INFO - Generated 1 semantic rewrites
+2025-01-28 00:17:17,318 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-28 00:17:17,397 - core.query_processor - INFO - Generated 1 query expansions
+2025-01-28 00:17:17,397 - core.query_processor - INFO - Generated total 3 queries
+2025-01-28 00:17:17,398 - main - INFO - 改写后的查询: ['今天的日期和农历日期是什么？', '今天是几号', '今天的日期是什么？']
+2025-01-28 00:17:19,428 - main - INFO - 获取到 63 条搜索结果
+2025-01-28 00:17:19,436 - main - INFO - 处理得到 63 个文档
+2025-01-28 00:17:19,478 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-28 00:17:19,529 - werkzeug - INFO - 169.136.75.201 - - [28/Jan/2025 00:17:19] "POST /search HTTP/1.1" 200 -
+2025-01-28 00:17:20,380 - httpx - INFO - HTTP Request: POST https://bigolive-offline-huangjiahong-01.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview "HTTP/1.1 200 OK"
+2025-01-28 00:19:04,777 - core.query_processor - INFO - Generated 7 semantic rewrites
+2025-01-28 00:19:09,386 - core.query_processor - INFO - Generated 17 query expansions
+2025-01-28 00:19:09,386 - core.query_processor - INFO - Generated total 25 queries
+2025-01-28 00:19:09,386 - main - INFO - 改写后的查询: ['**4. Application Examples**', 'A query expansion assistant! 🤖 I\'m excited to help. Here are some subqueries that explore different aspects of the original query "lora的原理是什么" (What is the principle of LoRa?):', '**3. Comparison with Other Technologies**', '1. What is the principle behind Lora?', 'This subquery targets research papers that delve into the technical aspects of LoRa, exploring its performance, security, and other topics relevant to academia and the scientific community.', "`SELECT * FROM {database} WHERE keywords IN ('IoT', 'smart city', 'industrial automation');`", "`SELECT * FROM {database} WHERE source LIKE '%research paper%' AND keywords IN ('LoRa performance', 'LoRa security');`", "These subqueries aim to provide a more specific and nuanced understanding of the original query by exploring different facets of LoRa's principle.", 'lora的原理是什么', "This subquery targets technical resources that provide an overview of LoRa's underlying mechanisms, such as its protocol, frequency hopping, and spread spectrum techniques.", '3. How does Lora work, theoretically speaking?', '**2. Technical Overview**', 'This subquery aims to retrieve information on what LoRa is and how it works, focusing on definitions and introductory explanations.', 'Each rewritten query conveys the same question: to understand the underlying principles or concept of Lora.', "5. What's the scientific basis for Lora?", 'This subquery focuses on real-world applications of LoRa technology, showcasing its use cases in IoT, smart cities, industrial automation, and other areas where wireless communication is crucial.', '2. Explain the underlying concept of Lora.', "`SELECT * FROM {database} WHERE title = 'LoRa definition' OR description LIKE '%principle%';`", '**5. Research Papers**', "`SELECT * FROM {database} WHERE title LIKE '%compare LoRa%';`", '**1. Definition**', 'This subquery explores how LoRa compares to other wireless technologies, highlighting similarities and differences in terms of principles, advantages, and limitations.', '4. Can you describe the fundamental idea of Lora?', 'Here are the rewritten queries in different forms, keeping the same semantic meaning:', "`SELECT * FROM {database} WHERE keywords IN ('LoRa protocol', 'frequency hopping', 'spread spectrum');`"]
+2025-01-28 00:19:22,895 - main - INFO - 获取到 248 条搜索结果
+2025-01-28 00:19:22,933 - main - INFO - 处理得到 248 个文档
+2025-01-28 00:19:23,114 - main - INFO - 重排序得到 5 个相关文本块
+2025-01-28 00:19:23,115 - werkzeug - INFO - 169.136.75.201 - - [28/Jan/2025 00:19:23] "POST /search HTTP/1.1" 200 -

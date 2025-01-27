@@ -1,0 +1,7 @@
+langchain>=0.1.0
+transformers
+sentence-transformers
+requests
+python-dotenv
+beautifulsoup4
+torch 
