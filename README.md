@@ -14,6 +14,12 @@ For Chinese version, please check [README_cn.md](documents/README_cn.md)
 - History record saving and querying
 - Responsive interface design
 
+## To Do
+
+- Optimize real-time search
+- Optimize generation result efficiency, such as first detecting whether to search, then searching, otherwise directly generating
+- Support for multi-round dialogue
+
 ## System Requirements
 
 - Python 3.8+
